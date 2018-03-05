@@ -68,7 +68,7 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(128)))), ((int)(((byte)(100)))));
             this.button3.Font = new System.Drawing.Font("CMU Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(23, 184);
+            this.button3.Location = new System.Drawing.Point(23, 178);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(111, 40);
             this.button3.TabIndex = 2;
@@ -91,7 +91,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.netherlands_303419_1280;
-            this.pictureBox1.Location = new System.Drawing.Point(575, 60);
+            this.pictureBox1.Location = new System.Drawing.Point(235, 60);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1161, 890);
             this.pictureBox1.TabIndex = 0;
@@ -111,6 +111,7 @@
             this.Name = "DataVisual";
             this.Text = "DataVisual";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Click += new System.EventHandler(this.button1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
