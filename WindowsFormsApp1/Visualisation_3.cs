@@ -36,6 +36,7 @@ namespace WindowsFormsApp1
             Visualisation_2 vis_2 = new Visualisation_2();
             vis_2.Show();
             this.Hide();
+            /// test    
         }
     }
 }
