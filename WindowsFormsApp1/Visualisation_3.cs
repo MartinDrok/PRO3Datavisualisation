@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
             DataVisual menu_1 = new DataVisual();
             menu_1.Show();
             this.Hide();
+            /// test
         }
 
         private void button2_Click(object sender, EventArgs e)
