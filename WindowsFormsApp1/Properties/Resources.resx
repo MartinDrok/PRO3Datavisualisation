@@ -118,7 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Drenthe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Drenthe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Groningen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Groningen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Friesland" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Friesland.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="netherlands-303419_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\netherlands-303419_1280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nederland" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nederland.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

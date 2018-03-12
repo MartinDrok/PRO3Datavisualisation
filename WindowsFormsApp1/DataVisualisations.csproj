@@ -116,5 +116,17 @@
   <ItemGroup>
     <None Include="Resources\netherlands-303419_1280.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Groningen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Friesland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drenthe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nederland.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
