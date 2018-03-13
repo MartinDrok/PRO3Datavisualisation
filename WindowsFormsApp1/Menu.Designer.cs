@@ -110,6 +110,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "DataVisual";
             this.Text = "DataVisual";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.button1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
