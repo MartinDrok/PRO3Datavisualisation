@@ -56,187 +56,535 @@ namespace WindowsFormsApp1
 
         private void Visualisation_3_Load(object sender, EventArgs e)
         {
-            
+
         }
 
-        private int button_zuid_holland = 0;
-        private int button_noord_holland = 0;
-        private int button_zeeland = 0;
-        private int button_noord_brabant = 0;
-        private int button_limburg = 0;
-        private int button_utrecht = 0;
-        private int button_flevoland = 0;
-        private int button_gelderland = 0;
-        private int button_overijssel = 0;
-        private int button_drenthe = 0;
-        private int button_friesland = 0;
-        private int button_groningen = 0;
+        private int button_zuid_holland = 0;    // button 4
+        private int button_noord_holland = 0;   // button 5
+        private int button_zeeland = 0;         // button 6
+        private int button_noord_brabant = 0;   // button 7
+        private int button_utrecht = 0;         // button 8
+        private int button_flevoland = 0;       // button 9
+        private int button_gelderland = 0;      // button 10
+        private int button_limburg = 0;         // button 11
+        private int button_overijssel = 0;      // button 12
+        private int button_drenthe = 0;         // button 13
+        private int button_friesland = 0;       // button 14
+        private int button_groningen = 0;       // button 15
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_MouseDown(object sender, MouseEventArgs e)
         {
             if (button_zuid_holland == 0)
             {
-                button_zuid_holland = 1;
-                this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_zuid_holland = 1;
+                    this.button4.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_zuid_holland = 2;
+                    this.button4.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
             }
             else if (button_zuid_holland == 1)
             {
-                button_zuid_holland = 0;
-                this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_zuid_holland = 0;
+                    this.button4.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_zuid_holland = 2;
+                    this.button4.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_zuid_holland == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_zuid_holland = 1;
+                    this.button4.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_zuid_holland = 0;
+                    this.button4.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
             }
         }
- 
-        private void button5_Click(object sender, EventArgs e)
+
+        private void button5_MouseDown(object sender, MouseEventArgs e)
         {
             if (button_noord_holland == 0)
             {
-                button_noord_holland = 1;
-                this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_noord_holland = 1;
+                    this.button5.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_noord_holland = 2;
+                    this.button5.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
             }
             else if (button_noord_holland == 1)
             {
-                button_noord_holland = 0;
-                this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_noord_holland = 0;
+                    this.button5.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_noord_holland = 2;
+                    this.button5.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_noord_holland == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_noord_holland = 1;
+                    this.button5.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_noord_holland = 0;
+                    this.button5.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
             }
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void button6_MouseDown(object sender, MouseEventArgs e)
         {
             if (button_zeeland == 0)
             {
-                button_zeeland = 1;
-                this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_zeeland = 1;
+                    this.button6.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_zeeland = 2;
+                    this.button6.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
             }
             else if (button_zeeland == 1)
             {
-                button_zeeland = 0;
-                this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_zeeland = 0;
+                    this.button6.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_zeeland = 2;
+                    this.button6.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_zeeland == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_zeeland = 1;
+                    this.button6.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_zeeland = 0;
+                    this.button6.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
             }
         }
 
-        private void button15_Click(object sender, EventArgs e)
-        {
-            if (button_groningen == 0)
-            {
-                button_groningen = 1;
-                this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
-            }
-            else if (button_groningen == 1)
-            {
-                button_groningen = 0;
-                this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            }
-        }
-
-        private void button7_Click(object sender, EventArgs e)
+        private void button7_MouseDown(object sender, MouseEventArgs e)
         {
             if (button_noord_brabant == 0)
             {
-                button_noord_brabant = 1;
-                this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_noord_brabant = 1;
+                    this.button7.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_noord_brabant = 2;
+                    this.button7.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
             }
             else if (button_noord_brabant == 1)
             {
-                button_noord_brabant = 0;
-                this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_noord_brabant = 0;
+                    this.button7.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_noord_brabant = 2;
+                    this.button7.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_noord_brabant == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_noord_brabant = 1;
+                    this.button7.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_noord_brabant = 0;
+                    this.button7.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
             }
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            if (button_limburg == 0)
-            {
-                button_limburg = 1;
-                this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
-            }
-            else if (button_limburg == 1)
-            {
-                button_limburg = 0;
-                this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            }
-        }
-
-        private void button8_Click(object sender, EventArgs e)
+        private void button8_MouseDown(object sender, MouseEventArgs e)
         {
             if (button_utrecht == 0)
             {
-                button_utrecht = 1;
-                this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_utrecht = 1;
+                    this.button8.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_utrecht = 2;
+                    this.button8.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
             }
             else if (button_utrecht == 1)
             {
-                button_utrecht = 0;
-                this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_utrecht = 0;
+                    this.button8.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_utrecht = 2;
+                    this.button8.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_utrecht == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_utrecht = 1;
+                    this.button8.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_utrecht = 0;
+                    this.button8.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
             }
         }
 
-        private void button10_Click(object sender, EventArgs e)
-        {
-            if (button_gelderland == 0)
-            {
-                button_gelderland = 1;
-                this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
-            }
-            else if (button_gelderland == 1)
-            {
-                button_gelderland = 0;
-                this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            }
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-            if (button_overijssel == 0)
-            {
-                button_overijssel = 1;
-                this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
-            }
-            else if (button_overijssel == 1)
-            {
-                button_overijssel = 0;
-                this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            }
-        }
-
-        private void button9_Click(object sender, EventArgs e)
+        private void button9_MouseDown(object sender, MouseEventArgs e)
         {
             if (button_flevoland == 0)
             {
-                button_flevoland = 1;
-                this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_flevoland = 1;
+                    this.button9.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_flevoland = 2;
+                    this.button9.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
             }
             else if (button_flevoland == 1)
             {
-                button_flevoland = 0;
-                this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_flevoland = 0;
+                    this.button9.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_flevoland = 2;
+                    this.button9.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_flevoland == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_flevoland = 1;
+                    this.button9.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_flevoland = 0;
+                    this.button9.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
             }
         }
 
-        private void button13_Click(object sender, EventArgs e)
+        private void button10_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (button_gelderland == 0)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_gelderland = 1;
+                    this.button10.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_gelderland = 2;
+                    this.button10.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_gelderland == 1)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_gelderland = 0;
+                    this.button10.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_gelderland = 2;
+                    this.button10.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_gelderland == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_gelderland = 1;
+                    this.button10.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_gelderland = 0;
+                    this.button10.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+            }
+        }
+
+        private void button11_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (button_limburg == 0)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_limburg = 1;
+                    this.button11.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_limburg = 2;
+                    this.button11.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_limburg == 1)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_limburg = 0;
+                    this.button11.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_limburg = 2;
+                    this.button11.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_limburg == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_limburg = 1;
+                    this.button11.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_limburg = 0;
+                    this.button11.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+            }
+        }
+
+        private void button12_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (button_overijssel == 0)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_overijssel = 1;
+                    this.button12.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_overijssel = 2;
+                    this.button12.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_overijssel == 1)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_overijssel = 0;
+                    this.button12.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_overijssel = 2;
+                    this.button12.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_overijssel == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_overijssel = 1;
+                    this.button12.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_overijssel = 0;
+                    this.button12.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+            }
+        }
+
+        private void button13_MouseDown(object sender, MouseEventArgs e)
         {
             if (button_drenthe == 0)
             {
-                button_drenthe = 1;
-                this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_drenthe = 1;
+                    this.button13.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_drenthe = 2;
+                    this.button13.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
             }
             else if (button_drenthe == 1)
             {
-                button_drenthe = 0;
-                this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_drenthe = 0;
+                    this.button13.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_drenthe = 2;
+                    this.button13.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_drenthe == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_drenthe = 1;
+                    this.button13.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_drenthe = 0;
+                    this.button13.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
             }
         }
 
-        private void button14_Click(object sender, EventArgs e)
+        private void button14_MouseDown(object sender, MouseEventArgs e)
         {
             if (button_friesland == 0)
             {
-                button_friesland = 1;
-                this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_friesland = 1;
+                    this.button14.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_friesland = 2;
+                    this.button14.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
             }
             else if (button_friesland == 1)
             {
-                button_friesland = 0;
-                this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_friesland = 0;
+                    this.button14.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_friesland = 2;
+                    this.button14.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_friesland == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_friesland = 1;
+                    this.button14.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_friesland = 0;
+                    this.button14.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+            }
+        }
+
+        private void button15_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (button_groningen == 0)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_groningen = 1;
+                    this.button15.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_groningen = 2;
+                    this.button15.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_groningen == 1)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_groningen = 0;
+                    this.button15.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_groningen = 2;
+                    this.button15.BackColor = Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+                }
+            }
+            else if (button_groningen == 2)
+            {
+                if (e.Button == MouseButtons.Left)
+                {
+                    button_groningen = 1;
+                    this.button15.BackColor = Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(226)))), ((int)(((byte)(231)))));
+                }
+                else if (e.Button == MouseButtons.Right)
+                {
+                    button_groningen = 0;
+                    this.button15.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+                }
             }
         }
     }
