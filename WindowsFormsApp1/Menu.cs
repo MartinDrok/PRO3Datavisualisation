@@ -19,9 +19,7 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            NetherlandsMap = pictureBox1;
-            NetherlandsMap.Image = Properties.Resources.netherlands_303419_1280;
-            NetherlandsMap.SizeMode = PictureBoxSizeMode.Zoom;
+
         }
 
         private void button1_Click(object sender, EventArgs e)

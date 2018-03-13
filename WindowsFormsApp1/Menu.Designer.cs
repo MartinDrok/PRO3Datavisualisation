@@ -90,11 +90,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.netherlands_303419_1280;
-            this.pictureBox1.Location = new System.Drawing.Point(235, 60);
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Nederland;
+            this.pictureBox1.Location = new System.Drawing.Point(430, 60);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1161, 890);
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.Size = new System.Drawing.Size(731, 855);
+            this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // DataVisual
@@ -124,7 +124,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-
     }
 }
 
