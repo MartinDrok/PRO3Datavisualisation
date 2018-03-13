@@ -72,6 +72,13 @@ namespace WindowsFormsApp1
         private int button_friesland = 0;       // button 14
         private int button_groningen = 0;       // button 15
 
+        private int button_jaar2011 = 0;
+        private int button_jaar2012 = 0;
+        private int button_jaar2013 = 0;
+        private int button_jaar2014 = 0;
+        private int button_jaar2015 = 0;
+        private int button_jaar2016 = 0;
+
         private void button4_MouseDown(object sender, MouseEventArgs e)
         {
             if (button_zuid_holland == 0)
@@ -585,6 +592,96 @@ namespace WindowsFormsApp1
                     button_groningen = 0;
                     this.button15.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
                 }
+            }
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonjaar2011_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (button_jaar2011 == 0)
+            {
+                button_jaar2011 = 1;
+                this.buttonjaar2011.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+            }
+            else
+            {
+                button_jaar2011 = 0;
+                this.buttonjaar2011.Image = null;
+            }
+            
+        }
+
+        private void buttonjaar2012_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (button_jaar2012 == 0)
+            {
+                button_jaar2012 = 1;
+                this.buttonjaar2012.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+            }
+            else
+            {
+                button_jaar2012 = 0;
+                this.buttonjaar2012.Image = null;
+            }
+        }
+
+        private void buttonjaar2013_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (button_jaar2013 == 0)
+            {
+                button_jaar2013 = 1;
+                this.buttonjaar2013.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+            }
+            else
+            {
+                button_jaar2013 = 0;
+                this.buttonjaar2013.Image = null;
+            }
+        }
+
+        private void buttonjaar2014_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (button_jaar2014 == 0)
+            {
+                button_jaar2014 = 1;
+                this.buttonjaar2014.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+            }
+            else
+            {
+                button_jaar2014 = 0;
+                this.buttonjaar2014.Image = null;
+            }
+        }
+
+        private void buttonjaar2015_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (button_jaar2015 == 0)
+            {
+                button_jaar2015 = 1;
+                this.buttonjaar2015.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+            }
+            else
+            {
+                button_jaar2015 = 0;
+                this.buttonjaar2015.Image = null;
+            }
+        }
+
+        private void buttonjaar2016_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (button_jaar2016 == 0)
+            {
+                button_jaar2016 = 1;
+                this.buttonjaar2016.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+            }
+            else
+            {
+                button_jaar2016 = 0;
+                this.buttonjaar2016.Image = null;
             }
         }
     }

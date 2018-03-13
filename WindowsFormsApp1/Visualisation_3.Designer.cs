@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea39 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend39 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series39 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea40 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend40 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series40 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -48,7 +48,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
@@ -61,6 +60,22 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.buttonjaar2011 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.buttonjaar2012 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.buttonjaar2013 = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.buttonjaar2016 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.buttonjaar2015 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.buttonjaar2014 = new System.Windows.Forms.Button();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -119,18 +134,18 @@
             // 
             // chart1
             // 
-            chartArea39.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea39);
-            legend39.Name = "Legend1";
-            this.chart1.Legends.Add(legend39);
-            this.chart1.Location = new System.Drawing.Point(576, 37);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(1025, 369);
             this.chart1.Margin = new System.Windows.Forms.Padding(2);
             this.chart1.Name = "chart1";
-            series39.ChartArea = "ChartArea1";
-            series39.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series39.Legend = "Legend1";
-            series39.Name = "Aantal personen";
-            this.chart1.Series.Add(series39);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Legend = "Legend1";
+            series1.Name = "Aantal personen";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(309, 244);
             this.chart1.TabIndex = 8;
             this.chart1.Text = "chart1";
@@ -140,40 +155,40 @@
             // 
             this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.chart2.BorderSkin.BorderColor = System.Drawing.Color.White;
-            chartArea40.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea40.AxisY.LineColor = System.Drawing.Color.White;
-            chartArea40.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
-            chartArea40.AxisY.TitleForeColor = System.Drawing.Color.White;
-            chartArea40.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea40);
-            legend40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            legend40.ForeColor = System.Drawing.Color.White;
-            legend40.HeaderSeparatorColor = System.Drawing.Color.White;
-            legend40.ItemColumnSeparatorColor = System.Drawing.Color.White;
-            legend40.Name = "Legend1";
-            this.chart2.Legends.Add(legend40);
-            this.chart2.Location = new System.Drawing.Point(246, 37);
+            chartArea2.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea2.AxisY.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisY.ScaleBreakStyle.LineColor = System.Drawing.Color.White;
+            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            legend2.ForeColor = System.Drawing.Color.White;
+            legend2.HeaderSeparatorColor = System.Drawing.Color.White;
+            legend2.ItemColumnSeparatorColor = System.Drawing.Color.White;
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
+            this.chart2.Location = new System.Drawing.Point(1025, 105);
             this.chart2.Margin = new System.Windows.Forms.Padding(2);
             this.chart2.Name = "chart2";
             this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series40.ChartArea = "ChartArea1";
-            series40.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series40.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(171)))));
-            series40.EmptyPointStyle.LabelForeColor = System.Drawing.Color.White;
-            series40.LabelForeColor = System.Drawing.Color.White;
-            series40.Legend = "Legend1";
-            series40.Name = "Aantal personen";
-            series40.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series40.ShadowColor = System.Drawing.Color.White;
-            series40.SmartLabelStyle.CalloutLineColor = System.Drawing.Color.White;
-            this.chart2.Series.Add(series40);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(161)))), ((int)(((byte)(171)))));
+            series2.EmptyPointStyle.LabelForeColor = System.Drawing.Color.White;
+            series2.LabelForeColor = System.Drawing.Color.White;
+            series2.Legend = "Legend1";
+            series2.Name = "Aantal personen";
+            series2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series2.ShadowColor = System.Drawing.Color.White;
+            series2.SmartLabelStyle.CalloutLineColor = System.Drawing.Color.White;
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(326, 244);
             this.chart2.TabIndex = 9;
             this.chart2.Text = "staafdigram";
             // 
             // Laden
             // 
-            this.Laden.Location = new System.Drawing.Point(246, 286);
+            this.Laden.Location = new System.Drawing.Point(1025, 642);
             this.Laden.Margin = new System.Windows.Forms.Padding(2);
             this.Laden.Name = "Laden";
             this.Laden.Size = new System.Drawing.Size(56, 19);
@@ -186,7 +201,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(21, 267);
+            this.label1.Location = new System.Drawing.Point(20, 865);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
@@ -196,7 +211,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(124, 300);
+            this.comboBox1.Location = new System.Drawing.Point(123, 898);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(92, 21);
@@ -206,7 +221,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(21, 300);
+            this.label2.Location = new System.Drawing.Point(20, 898);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 13);
@@ -216,7 +231,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(124, 324);
+            this.comboBox2.Location = new System.Drawing.Point(123, 922);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(92, 21);
@@ -226,7 +241,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(21, 324);
+            this.label3.Location = new System.Drawing.Point(20, 922);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(76, 13);
@@ -236,7 +251,7 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(124, 349);
+            this.comboBox3.Location = new System.Drawing.Point(123, 947);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(92, 21);
@@ -246,21 +261,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(21, 351);
+            this.label4.Location = new System.Drawing.Point(20, 949);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 13);
             this.label4.TabIndex = 18;
             this.label4.Text = "Zoek per Geslacht:";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Nederland;
-            this.pictureBox1.Location = new System.Drawing.Point(890, 37);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(716, 858);
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
             // 
             // button14
             // 
@@ -271,7 +277,7 @@
             this.button14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button14.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button14.Location = new System.Drawing.Point(1309, 168);
+            this.button14.Location = new System.Drawing.Point(659, 245);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(100, 50);
             this.button14.TabIndex = 30;
@@ -288,7 +294,7 @@
             this.button15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button15.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button15.Location = new System.Drawing.Point(1494, 117);
+            this.button15.Location = new System.Drawing.Point(844, 194);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(100, 50);
             this.button15.TabIndex = 31;
@@ -305,7 +311,7 @@
             this.button13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button13.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button13.Location = new System.Drawing.Point(1465, 237);
+            this.button13.Location = new System.Drawing.Point(815, 314);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(100, 50);
             this.button13.TabIndex = 29;
@@ -322,7 +328,7 @@
             this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button5.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(1080, 305);
+            this.button5.Location = new System.Drawing.Point(430, 382);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 50);
             this.button5.TabIndex = 21;
@@ -339,7 +345,7 @@
             this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button9.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button9.Location = new System.Drawing.Point(1245, 307);
+            this.button9.Location = new System.Drawing.Point(595, 384);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(100, 50);
             this.button9.TabIndex = 25;
@@ -356,7 +362,7 @@
             this.button12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button12.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button12.Location = new System.Drawing.Point(1426, 361);
+            this.button12.Location = new System.Drawing.Point(776, 438);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(100, 50);
             this.button12.TabIndex = 28;
@@ -373,7 +379,7 @@
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button10.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button10.Location = new System.Drawing.Point(1339, 453);
+            this.button10.Location = new System.Drawing.Point(689, 530);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(100, 50);
             this.button10.TabIndex = 26;
@@ -390,7 +396,7 @@
             this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button8.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button8.Location = new System.Drawing.Point(1186, 453);
+            this.button8.Location = new System.Drawing.Point(536, 530);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(100, 50);
             this.button8.TabIndex = 24;
@@ -407,7 +413,7 @@
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button4.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(1036, 479);
+            this.button4.Location = new System.Drawing.Point(386, 556);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 50);
             this.button4.TabIndex = 20;
@@ -424,7 +430,7 @@
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button6.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(940, 625);
+            this.button6.Location = new System.Drawing.Point(290, 702);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(100, 50);
             this.button6.TabIndex = 22;
@@ -441,7 +447,7 @@
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button7.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Location = new System.Drawing.Point(1226, 625);
+            this.button7.Location = new System.Drawing.Point(576, 702);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(100, 50);
             this.button7.TabIndex = 23;
@@ -458,7 +464,7 @@
             this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button11.Font = new System.Drawing.Font("CMU Bright", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button11.Location = new System.Drawing.Point(1391, 675);
+            this.button11.Location = new System.Drawing.Point(741, 752);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(100, 50);
             this.button11.TabIndex = 27;
@@ -466,12 +472,227 @@
             this.button11.UseVisualStyleBackColor = false;
             this.button11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button11_MouseDown);
             // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox1.Location = new System.Drawing.Point(240, 48);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(537, 42);
+            this.textBox1.TabIndex = 32;
+            this.textBox1.Text = "Selecteer met de LINKER-muisknop de vertrekprovincie(s).\r\nSelecteer met de RECHTE" +
+    "R-muisknop de aankomstprovincie(s).";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox2.Location = new System.Drawing.Point(130, 326);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(49, 23);
+            this.textBox2.TabIndex = 34;
+            this.textBox2.Text = "2011";
+            // 
+            // buttonjaar2011
+            // 
+            this.buttonjaar2011.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonjaar2011.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonjaar2011.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonjaar2011.Location = new System.Drawing.Point(64, 322);
+            this.buttonjaar2011.Name = "buttonjaar2011";
+            this.buttonjaar2011.Size = new System.Drawing.Size(56, 29);
+            this.buttonjaar2011.TabIndex = 33;
+            this.buttonjaar2011.UseVisualStyleBackColor = false;
+            this.buttonjaar2011.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonjaar2011_MouseDown);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Nederland;
+            this.pictureBox1.Location = new System.Drawing.Point(240, 114);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(716, 858);
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox3.Location = new System.Drawing.Point(23, 287);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(160, 23);
+            this.textBox3.TabIndex = 35;
+            this.textBox3.Text = "Selecteer een jaartal.";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox4.Location = new System.Drawing.Point(130, 361);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(49, 23);
+            this.textBox4.TabIndex = 37;
+            this.textBox4.Text = "2012";
+            // 
+            // buttonjaar2012
+            // 
+            this.buttonjaar2012.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonjaar2012.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonjaar2012.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonjaar2012.Location = new System.Drawing.Point(64, 357);
+            this.buttonjaar2012.Name = "buttonjaar2012";
+            this.buttonjaar2012.Size = new System.Drawing.Size(56, 29);
+            this.buttonjaar2012.TabIndex = 36;
+            this.buttonjaar2012.UseVisualStyleBackColor = false;
+            this.buttonjaar2012.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonjaar2012_MouseDown);
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox5.Location = new System.Drawing.Point(130, 396);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(49, 23);
+            this.textBox5.TabIndex = 39;
+            this.textBox5.Text = "2013";
+            // 
+            // buttonjaar2013
+            // 
+            this.buttonjaar2013.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonjaar2013.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonjaar2013.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonjaar2013.Location = new System.Drawing.Point(64, 392);
+            this.buttonjaar2013.Name = "buttonjaar2013";
+            this.buttonjaar2013.Size = new System.Drawing.Size(56, 29);
+            this.buttonjaar2013.TabIndex = 38;
+            this.buttonjaar2013.UseVisualStyleBackColor = false;
+            this.buttonjaar2013.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonjaar2013_MouseDown);
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox6.Location = new System.Drawing.Point(130, 501);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(49, 23);
+            this.textBox6.TabIndex = 45;
+            this.textBox6.Text = "2016";
+            // 
+            // buttonjaar2016
+            // 
+            this.buttonjaar2016.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonjaar2016.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonjaar2016.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonjaar2016.Location = new System.Drawing.Point(64, 497);
+            this.buttonjaar2016.Name = "buttonjaar2016";
+            this.buttonjaar2016.Size = new System.Drawing.Size(56, 29);
+            this.buttonjaar2016.TabIndex = 44;
+            this.buttonjaar2016.UseVisualStyleBackColor = false;
+            this.buttonjaar2016.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonjaar2016_MouseDown);
+            // 
+            // textBox7
+            // 
+            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox7.Location = new System.Drawing.Point(130, 466);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(49, 23);
+            this.textBox7.TabIndex = 43;
+            this.textBox7.Text = "2015";
+            // 
+            // buttonjaar2015
+            // 
+            this.buttonjaar2015.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonjaar2015.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonjaar2015.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonjaar2015.Location = new System.Drawing.Point(64, 462);
+            this.buttonjaar2015.Name = "buttonjaar2015";
+            this.buttonjaar2015.Size = new System.Drawing.Size(56, 29);
+            this.buttonjaar2015.TabIndex = 42;
+            this.buttonjaar2015.UseVisualStyleBackColor = false;
+            this.buttonjaar2015.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonjaar2015_MouseDown);
+            // 
+            // textBox8
+            // 
+            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox8.Location = new System.Drawing.Point(130, 431);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(49, 23);
+            this.textBox8.TabIndex = 41;
+            this.textBox8.Text = "2014";
+            // 
+            // buttonjaar2014
+            // 
+            this.buttonjaar2014.BackColor = System.Drawing.Color.Gainsboro;
+            this.buttonjaar2014.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonjaar2014.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonjaar2014.Location = new System.Drawing.Point(64, 427);
+            this.buttonjaar2014.Name = "buttonjaar2014";
+            this.buttonjaar2014.Size = new System.Drawing.Size(56, 29);
+            this.buttonjaar2014.TabIndex = 40;
+            this.buttonjaar2014.UseVisualStyleBackColor = false;
+            this.buttonjaar2014.MouseDown += new System.Windows.Forms.MouseEventHandler(this.buttonjaar2014_MouseDown);
+            // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox9.Location = new System.Drawing.Point(1025, 67);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(160, 23);
+            this.textBox9.TabIndex = 46;
+            this.textBox9.Text = "Het resultaat:";
+            // 
             // Visualisation_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.buttonjaar2016);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.buttonjaar2015);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.buttonjaar2014);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.buttonjaar2013);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.buttonjaar2012);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.buttonjaar2011);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
@@ -540,5 +761,20 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonjaar2011;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button buttonjaar2012;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button buttonjaar2013;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button buttonjaar2016;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button buttonjaar2015;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button buttonjaar2014;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }
