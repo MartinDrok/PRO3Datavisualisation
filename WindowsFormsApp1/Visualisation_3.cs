@@ -897,8 +897,6 @@ namespace WindowsFormsApp1
                     con.Open();
                     this.textBox10.Text = "Database Status: Verbonden";
 
-                    string queryExclude = "'Nederland'";
-
                     SqlDataAdapter adapterVerhuizingen = new SqlDataAdapter(                                                                //  Maakt DataAdapter aan met SQL query
                         "SELECT * FROM MMVerhuizingen" +
                         " WHERE "
@@ -917,8 +915,8 @@ namespace WindowsFormsApp1
                         + filter_drenthe
                         + filter_friesland
                         + filter_groningen
-                        + ") AND RegioVanVertrek NOT LIKE" + queryExclude
-                        + " AND RegioVanVertrek NOT LIKE" + filter_vestiging
+                        + ") AND RegioVanVertrek NOT LIKE 'Nederland'"
+                        + " AND RegioVanVertrek NOT LIKE " + filter_vestiging
                         , con);
 
                     DataSet datasetMM1 = new DataSet("MM-Verhuizingen");                                                                                      // Maakt DataSet aan
