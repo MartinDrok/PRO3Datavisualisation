@@ -61,18 +61,28 @@ namespace WindowsFormsApp1
 
         }
 
-        private int button_zuid_holland = 0;    // button 4
-        private int button_noord_holland = 0;   // button 5
-        private int button_zeeland = 0;         // button 6
-        private int button_noord_brabant = 0;   // button 7
-        private int button_utrecht = 0;         // button 8
-        private int button_flevoland = 0;       // button 9
-        private int button_gelderland = 0;      // button 10
-        private int button_limburg = 0;         // button 11
-        private int button_overijssel = 0;      // button 12
-        private int button_drenthe = 0;         // button 13
-        private int button_friesland = 0;       // button 14
-        private int button_groningen = 0;       // button 15
+        //private List<int> RightMouseChecklist()
+        //{
+        //    List<int> checklistr = new List<int>();
+        //    checklistr.Add(button_zuid_holland);
+        //    checklistr.Add(button_noord_holland);
+        //    checklistr.Add(button_zeeland);
+        //    checklistr.Add(button_noord_brabant);
+        //    checklistr.Add(button_utrecht);
+        //    checklistr.Add(button_flevoland);
+        //    checklistr.Add(button_gelderland);
+        //    checklistr.Add(button_limburg);
+        //    checklistr.Add(button_overijssel);
+        //    checklistr.Add(button_drenthe);
+        //    checklistr.Add(button_friesland);
+        //    checklistr.Add(button_groningen);
+        //    return checklistr;
+
+        //    if (RightMouseChecklist().Contains(2))
+        //    {
+        //        int a = RightMouseChecklist()[RightMouseChecklist().FindIndex(ind => ind.Equals(2))] = 0;
+        //    }
+        //}
 
         private string filter_zuid_holland = "";
         private string filter_noord_holland = "";
@@ -89,14 +99,90 @@ namespace WindowsFormsApp1
 
         private string filter_vestiging = "";
 
-        int[] rgb_leftclick_array = new int[] { 255, 177, 101 };
-        int[] rgb_rightclick_array = new int[] { 255, 39, 113 };
+        private int button_zuid_holland = 0;    // button 4
+        private int button_noord_holland = 0;   // button 5
+        private int button_zeeland = 0;         // button 6
+        private int button_noord_brabant = 0;   // button 7
+        private int button_utrecht = 0;         // button 8
+        private int button_flevoland = 0;       // button 9
+        private int button_gelderland = 0;      // button 10
+        private int button_limburg = 0;         // button 11
+        private int button_overijssel = 0;      // button 12
+        private int button_drenthe = 0;         // button 13
+        private int button_friesland = 0;       // button 14
+        private int button_groningen = 0;       // button 15
+
+        int[] rgb_leftclick_array = new int[] { 255, 177, 101 };                           
+        int[] rgb_rightclick_array = new int[] { 255, 39, 113 };                            
         int[] rgb_emptyclick_array = new int[] { 250, 250, 250 };
 
+        private void CheckWhichButtonsRightClicked()
+        {
+            if (button_zuid_holland == 2)
+            {
+                button_zuid_holland = 0;
+                this.button4.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_noord_holland == 2)
+            {
+                button_noord_holland = 0;
+                this.button5.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_zeeland == 2)
+            {
+                button_zeeland = 0;
+                this.button6.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_noord_brabant == 2)
+            {
+                button_noord_brabant = 0;
+                this.button7.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_utrecht == 2)
+            {
+                button_utrecht = 0;
+                this.button8.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_flevoland == 2)
+            {
+                button_flevoland = 0;
+                this.button9.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_gelderland == 2)
+            {
+                button_gelderland = 0;
+                this.button10.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_limburg == 2)
+            {
+                button_limburg = 0;
+                this.button11.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_overijssel == 2)
+            {
+                button_overijssel = 0;
+                this.button12.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_drenthe == 2)
+            {
+                button_drenthe = 0;
+                this.button13.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_friesland == 2)
+            {
+                button_friesland = 0;
+                this.button14.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+            if (button_groningen == 2)
+            {
+                button_groningen = 0;
+                this.button15.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
+            }
+        }
 
         private void button4_MouseDown(object sender, MouseEventArgs e)
         {
-            if (button_zuid_holland == 0)
+            if (button_zuid_holland == 0)                                                               // als de knop leeg is...
             {
                 if (e.Button == MouseButtons.Left)
                 {
@@ -106,12 +192,13 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_zuid_holland = 2;
                     this.button4.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Zuid-Holland'";
                 }
             }
-            else if (button_zuid_holland == 1)
+            else if (button_zuid_holland == 1)                                                             // als de knop al eerder met de LINKER-muis is aangeklikt...
             {
                 if (e.Button == MouseButtons.Left)
                 {
@@ -121,13 +208,14 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_zuid_holland = 2;
                     this.button4.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_zuid_holland = "";
                     filter_vestiging = "'Zuid-Holland'";
                 }
             }
-            else if (button_zuid_holland == 2)
+            else if (button_zuid_holland == 2)                                                             // als de knop al eerder met de RECHTER-muis is aangeklikt...
             {
                 if (e.Button == MouseButtons.Left)
                 {
@@ -157,6 +245,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_noord_holland = 2;
                     this.button5.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Noord-Holland'";
@@ -172,6 +261,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_noord_holland = 2;
                     this.button5.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_noord_holland = "";
@@ -189,6 +279,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_noord_holland = 0;
                     this.button5.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_vestiging = "";
@@ -208,6 +299,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_zeeland = 2;
                     this.button6.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Zeeland'";
@@ -223,6 +315,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_zeeland = 2;
                     this.button6.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_zeeland = "";
@@ -259,6 +352,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_noord_brabant = 2;
                     this.button7.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Noord-Brabant'";
@@ -274,6 +368,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_noord_brabant = 2;
                     this.button7.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_noord_brabant = "";
@@ -291,6 +386,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_noord_brabant = 0;
                     this.button7.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_vestiging = "";
@@ -310,6 +406,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_utrecht = 2;
                     this.button8.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Utrecht'";
@@ -325,6 +422,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_utrecht = 2;
                     this.button8.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_utrecht = "";
@@ -361,6 +459,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_flevoland = 2;
                     this.button9.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Flevoland'";
@@ -376,6 +475,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_flevoland = 2;
                     this.button9.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_flevoland = "";
@@ -412,6 +512,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_gelderland = 2;
                     this.button10.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Gelderland'";
@@ -427,6 +528,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_gelderland = 2;
                     this.button10.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_gelderland = "";
@@ -463,6 +565,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_limburg = 2;
                     this.button11.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Limburg'";
@@ -478,6 +581,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_limburg = 2;
                     this.button11.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_limburg = "";
@@ -514,6 +618,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_overijssel = 2;
                     this.button12.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Overijssel'";
@@ -529,6 +634,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_overijssel = 2;
                     this.button12.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_overijssel = "";
@@ -565,6 +671,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_drenthe = 2;
                     this.button13.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Drenthe'";
@@ -580,6 +687,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_drenthe = 2;
                     this.button13.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_drenthe = "";
@@ -616,6 +724,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_friesland = 2;
                     this.button14.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Friesland'";
@@ -631,6 +740,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_friesland = 2;
                     this.button14.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_friesland = "";
@@ -667,6 +777,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_groningen = 2;
                     this.button15.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_vestiging = "'Groningen'";
@@ -682,6 +793,7 @@ namespace WindowsFormsApp1
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
+                    CheckWhichButtonsRightClicked();
                     button_groningen = 2;
                     this.button15.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_groningen = "";
@@ -890,7 +1002,7 @@ namespace WindowsFormsApp1
         {
             try
             {
-                if (filter_Perioden != "")
+                if (filter_Perioden != "" && filter_vestiging != "")
                 {
                     string str = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=PRO3-Datavisualisatie;Integrated Security=True";              // Maakt verbinding met SQL server
                     SqlConnection con = new SqlConnection(str);
@@ -932,7 +1044,7 @@ namespace WindowsFormsApp1
                     DataTable tableBedrijven;                                                                                                   // Maakt DataTables aan in DataSet
                     tableBedrijven = datasetMM2.Tables["MMVestigingen"];
 
-                    foreach (DataRow row in tableVerhuizingen.Rows)                      // Vult console met waarden uit DataTable, goee manier om werking van datatable te testen
+                    foreach (DataRow row in tableVerhuizingen.Rows)                      // Vult console met waarden uit DataTable, goede manier om werking van datatable te testen
                     {
                         foreach (DataColumn col in tableVerhuizingen.Columns)
                             Console.Write(string.Format("{0, -10}", row[col].ToString()));
@@ -943,11 +1055,16 @@ namespace WindowsFormsApp1
                     chart3.DataSource = datasetMM1;                                                                                                      // vult de chart met data
                     chart3.Series["Aantal personen"].XValueMember = "RegioVanVertrek";
                     chart3.Series["Aantal personen"].YValueMembers = "TussenGemeentenVerhuisdePersonen_1";
-                    chart3.Titles.Add("Verhuisde personen naar " + filter_vestiging + filter_Perioden);
+                    chart3.Titles["Title1"].Visible = true;
+                    chart3.Titles["Title1"].Text = "Aantal verhuisde personen naar " + filter_vestiging + " in " + filter_Perioden;
                 }
                 else if (filter_Perioden == "")
                 {
                     MessageBox.Show("Selecteer eerst een jaartaal.");
+                }
+                else if (filter_vestiging == "")
+                {
+                    MessageBox.Show("Selecteer eerst een bestemming met de rechter-muisknop.");
                 }
             }
             catch (Exception es)                                                                                                               // Als de verbinding is mislukt
@@ -958,6 +1075,11 @@ namespace WindowsFormsApp1
         }
 
         private void buttonLaden_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
         {
 
         }
