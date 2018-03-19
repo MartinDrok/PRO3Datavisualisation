@@ -1053,18 +1053,25 @@ namespace WindowsFormsApp1
                     }
 
                     chart3.DataSource = datasetMM1;                                                                                                      // vult de chart met data
-                    chart3.Series["Aantal personen"].XValueMember = "RegioVanVertrek";
-                    chart3.Series["Aantal personen"].YValueMembers = "TussenGemeentenVerhuisdePersonen_1";
+                    chart3.Series["Aantal personen"].XValueMember = "RegioVanVertrek";                                                                   // geeft x-as aan
+                    chart3.Series["Aantal personen"].YValueMembers = "TussenGemeentenVerhuisdePersonen_1";                                               // geeft y-as aan
                     chart3.Titles["Title1"].Visible = true;
                     chart3.Titles["Title1"].Text = "Aantal verhuisde personen naar " + filter_vestiging + " in " + filter_Perioden;
                 }
-                else if (filter_Perioden == "")
+                if (filter_Perioden == "")                                                                                                // als er geen periode is aangevinkt
                 {
                     MessageBox.Show("Selecteer eerst een jaartaal.");
                 }
-                else if (filter_vestiging == "")
+                if (filter_vestiging == "")                                                                                              // als er geen bestemming is aangevinkt
                 {
-                    MessageBox.Show("Selecteer eerst een bestemming met de rechter-muisknop.");
+                    MessageBox.Show("Selecteer eerst een bestemming met de rechter-muisknop.");                                             
+                }
+                if (filter_zuid_holland == "" && filter_noord_holland == "" && filter_zeeland == ""                                     // als er geen vertrekpunt is aangevinkt
+                    && filter_noord_brabant == "" && filter_limburg == "" && filter_utrecht == ""
+                    && filter_gelderland == "" && filter_flevoland == "" && filter_overijssel == ""
+                    && filter_drenthe == "" && filter_friesland == "" && filter_groningen == "")
+                {
+                    MessageBox.Show("Selecteer eerst een vertrekprovincie met de linker-muisknop.");
                 }
             }
             catch (Exception es)                                                                                                               // Als de verbinding is mislukt
