@@ -46,10 +46,5 @@ namespace WindowsFormsApp1
         private void pictureBox1_Click(object sender, EventArgs e)
         {
         }
-
-        private void Filter_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

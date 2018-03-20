@@ -33,7 +33,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Filter = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -99,22 +98,11 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Nederland;
-            this.pictureBox1.Location = new System.Drawing.Point(833, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(866, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1057, 1035);
+            this.pictureBox1.Size = new System.Drawing.Size(1024, 982);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            // 
-            // Filter
-            // 
-            this.Filter.AutoSize = true;
-            this.Filter.Location = new System.Drawing.Point(57, 348);
-            this.Filter.Name = "Filter";
-            this.Filter.Size = new System.Drawing.Size(61, 21);
-            this.Filter.TabIndex = 7;
-            this.Filter.Text = "Filter";
-            this.Filter.UseVisualStyleBackColor = true;
-            this.Filter.CheckedChanged += new System.EventHandler(this.Filter_CheckedChanged);
             // 
             // Visualisation_2
             // 
@@ -122,7 +110,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1902, 1033);
-            this.Controls.Add(this.Filter);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -133,7 +120,6 @@
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -144,6 +130,5 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox Filter;
     }
 }
