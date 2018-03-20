@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 namespace WindowsFormsApp1
 {
     public partial class DataVisual : Form
@@ -19,7 +21,18 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                string str = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=PRO3-Datavisualisatie;Integrated Security=True";
+                SqlConnection con = new SqlConnection(str);
+                con.Open();
+                this.textBox10.Text = "Database Status: Verbonden";
+            }
+            catch (Exception es)
+            {
+                this.textBox10.Text = "Database Status: Niet Verbonden";
+                MessageBox.Show(es.Message);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
