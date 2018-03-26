@@ -66,5 +66,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
