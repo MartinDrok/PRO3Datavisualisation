@@ -35,17 +35,18 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox5 = new System.Windows.Forms.CheckedListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.checkedListBox6 = new System.Windows.Forms.CheckedListBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +67,7 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(88)))), ((int)(((byte)(60)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(111)))), ((int)(((byte)(121)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(11, 24);
@@ -79,7 +80,7 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(128)))), ((int)(((byte)(100)))));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(161)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button3.Location = new System.Drawing.Point(11, 141);
@@ -92,7 +93,7 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(128)))), ((int)(((byte)(100)))));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(161)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.Location = new System.Drawing.Point(11, 82);
@@ -115,7 +116,11 @@
             // 
             // checkedListBox1
             // 
-            this.checkedListBox1.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox1.CheckOnClick = true;
+            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "15 - 20",
@@ -123,24 +128,18 @@
             "41 - 60",
             "61 - 80",
             "80+"});
-            this.checkedListBox1.Location = new System.Drawing.Point(1625, 121);
+            this.checkedListBox1.Location = new System.Drawing.Point(23, 558);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 130);
             this.checkedListBox1.TabIndex = 20;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(1656, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Leeftijd";
             // 
             // checkedListBox2
             // 
-            this.checkedListBox2.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.checkedListBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.checkedListBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox2.CheckOnClick = true;
+            this.checkedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
             this.checkedListBox2.FormattingEnabled = true;
             this.checkedListBox2.Items.AddRange(new object[] {
             "2011",
@@ -150,24 +149,18 @@
             "2015",
             "2016",
             "2017"});
-            this.checkedListBox2.Location = new System.Drawing.Point(1469, 121);
+            this.checkedListBox2.Location = new System.Drawing.Point(23, 322);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox2.Size = new System.Drawing.Size(125, 154);
             this.checkedListBox2.TabIndex = 22;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(1507, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Periode";
             // 
             // checkedListBox3
             // 
-            this.checkedListBox3.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.checkedListBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.checkedListBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox3.CheckOnClick = true;
+            this.checkedListBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.checkedListBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
             this.checkedListBox3.FormattingEnabled = true;
             this.checkedListBox3.Items.AddRange(new object[] {
             "1",
@@ -175,85 +168,144 @@
             "3",
             "4",
             "5+"});
-            this.checkedListBox3.Location = new System.Drawing.Point(1469, 276);
+            this.checkedListBox3.Location = new System.Drawing.Point(19, 773);
             this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox3.Size = new System.Drawing.Size(120, 130);
             this.checkedListBox3.TabIndex = 24;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(1489, 242);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 13);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Aantal Kinderen";
             // 
             // checkedListBox4
             // 
-            this.checkedListBox4.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.checkedListBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.checkedListBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox4.CheckOnClick = true;
+            this.checkedListBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.checkedListBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
             this.checkedListBox4.FormattingEnabled = true;
             this.checkedListBox4.Items.AddRange(new object[] {
             "Zelfstandig",
             "Niet Zelfstandig"});
-            this.checkedListBox4.Location = new System.Drawing.Point(1625, 276);
+            this.checkedListBox4.Location = new System.Drawing.Point(259, 322);
             this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox4.Size = new System.Drawing.Size(192, 130);
             this.checkedListBox4.TabIndex = 26;
             // 
             // checkedListBox5
             // 
-            this.checkedListBox5.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.checkedListBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.checkedListBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox5.CheckOnClick = true;
+            this.checkedListBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.checkedListBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
             this.checkedListBox5.FormattingEnabled = true;
             this.checkedListBox5.Items.AddRange(new object[] {
             "Koopwoning",
             "Huurwoning"});
-            this.checkedListBox5.Location = new System.Drawing.Point(1469, 418);
+            this.checkedListBox5.Location = new System.Drawing.Point(259, 558);
             this.checkedListBox5.Name = "checkedListBox5";
-            this.checkedListBox5.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox5.Size = new System.Drawing.Size(169, 78);
             this.checkedListBox5.TabIndex = 27;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(1500, 391);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Woning";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(1642, 242);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 13);
-            this.label5.TabIndex = 29;
-            this.label5.Text = "Zelfstandigheid";
             // 
             // checkedListBox6
             // 
-            this.checkedListBox6.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.checkedListBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.checkedListBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.checkedListBox6.CheckOnClick = true;
+            this.checkedListBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.checkedListBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
             this.checkedListBox6.FormattingEnabled = true;
             this.checkedListBox6.Items.AddRange(new object[] {
             "..."});
-            this.checkedListBox6.Location = new System.Drawing.Point(1625, 418);
+            this.checkedListBox6.Location = new System.Drawing.Point(259, 773);
             this.checkedListBox6.Name = "checkedListBox6";
-            this.checkedListBox6.Size = new System.Drawing.Size(120, 94);
+            this.checkedListBox6.Size = new System.Drawing.Size(169, 130);
             this.checkedListBox6.TabIndex = 30;
             // 
-            // label6
+            // textBox2
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(1642, 391);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 13);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Herkomstland";
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox2.Location = new System.Drawing.Point(23, 276);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 24);
+            this.textBox2.TabIndex = 33;
+            this.textBox2.Text = "Periode";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox1.Location = new System.Drawing.Point(23, 517);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 24);
+            this.textBox1.TabIndex = 34;
+            this.textBox1.Text = "Leeftijd";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox3.Location = new System.Drawing.Point(19, 729);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(169, 24);
+            this.textBox3.TabIndex = 35;
+            this.textBox3.Text = "Aantal kinderen";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox4.Location = new System.Drawing.Point(259, 729);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(154, 24);
+            this.textBox4.TabIndex = 36;
+            this.textBox4.Text = "Herkomstland";
+            // 
+            // textBox5
+            // 
+            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox5.Location = new System.Drawing.Point(259, 517);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 24);
+            this.textBox5.TabIndex = 37;
+            this.textBox5.Text = "Woning";
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.textBox6.Location = new System.Drawing.Point(259, 276);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(169, 24);
+            this.textBox6.TabIndex = 38;
+            this.textBox6.Text = "Zelfstandigheid";
+            // 
+            // textBox14
+            // 
+            this.textBox14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(231)))), ((int)(((byte)(241)))));
+            this.textBox14.Location = new System.Drawing.Point(167, 46);
+            this.textBox14.Multiline = true;
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(463, 29);
+            this.textBox14.TabIndex = 54;
+            this.textBox14.Text = "Datavisualisatie - Het gemiddelde inkomen";
             // 
             // Visualisation_2
             // 
@@ -261,20 +313,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.checkedListBox6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.checkedListBox5);
             this.Controls.Add(this.checkedListBox4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.checkedListBox3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.checkedListBox2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
             this.Name = "Visualisation_2";
             this.Text = "Visualisation_2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -294,16 +348,17 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.CheckedListBox checkedListBox3;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckedListBox checkedListBox4;
         private System.Windows.Forms.CheckedListBox checkedListBox5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckedListBox checkedListBox6;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox14;
     }
 }
