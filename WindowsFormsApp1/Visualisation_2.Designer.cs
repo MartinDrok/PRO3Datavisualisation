@@ -20,6 +20,7 @@
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -106,9 +107,9 @@
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Nederland;
             this.pictureBox1.Location = new System.Drawing.Point(650, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(768, 833);
+            this.pictureBox1.Size = new System.Drawing.Size(768, 900);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -122,7 +123,7 @@
             "41 - 60",
             "61 - 80",
             "80+"});
-            this.checkedListBox1.Location = new System.Drawing.Point(399, 168);
+            this.checkedListBox1.Location = new System.Drawing.Point(1625, 121);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
             this.checkedListBox1.TabIndex = 20;
@@ -131,7 +132,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(430, 137);
+            this.label1.Location = new System.Drawing.Point(1656, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 21;
@@ -149,7 +150,7 @@
             "2015",
             "2016",
             "2017"});
-            this.checkedListBox2.Location = new System.Drawing.Point(243, 168);
+            this.checkedListBox2.Location = new System.Drawing.Point(1469, 121);
             this.checkedListBox2.Name = "checkedListBox2";
             this.checkedListBox2.Size = new System.Drawing.Size(120, 94);
             this.checkedListBox2.TabIndex = 22;
@@ -158,7 +159,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(281, 137);
+            this.label2.Location = new System.Drawing.Point(1507, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 23;
@@ -174,7 +175,7 @@
             "3",
             "4",
             "5+"});
-            this.checkedListBox3.Location = new System.Drawing.Point(243, 323);
+            this.checkedListBox3.Location = new System.Drawing.Point(1469, 276);
             this.checkedListBox3.Name = "checkedListBox3";
             this.checkedListBox3.Size = new System.Drawing.Size(120, 94);
             this.checkedListBox3.TabIndex = 24;
@@ -183,7 +184,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(263, 289);
+            this.label3.Location = new System.Drawing.Point(1489, 242);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 13);
             this.label3.TabIndex = 25;
@@ -196,7 +197,7 @@
             this.checkedListBox4.Items.AddRange(new object[] {
             "Zelfstandig",
             "Niet Zelfstandig"});
-            this.checkedListBox4.Location = new System.Drawing.Point(399, 323);
+            this.checkedListBox4.Location = new System.Drawing.Point(1625, 276);
             this.checkedListBox4.Name = "checkedListBox4";
             this.checkedListBox4.Size = new System.Drawing.Size(120, 94);
             this.checkedListBox4.TabIndex = 26;
@@ -208,7 +209,7 @@
             this.checkedListBox5.Items.AddRange(new object[] {
             "Koopwoning",
             "Huurwoning"});
-            this.checkedListBox5.Location = new System.Drawing.Point(243, 465);
+            this.checkedListBox5.Location = new System.Drawing.Point(1469, 418);
             this.checkedListBox5.Name = "checkedListBox5";
             this.checkedListBox5.Size = new System.Drawing.Size(120, 94);
             this.checkedListBox5.TabIndex = 27;
@@ -217,7 +218,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(274, 438);
+            this.label4.Location = new System.Drawing.Point(1500, 391);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 28;
@@ -227,7 +228,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(416, 289);
+            this.label5.Location = new System.Drawing.Point(1642, 242);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 13);
             this.label5.TabIndex = 29;
@@ -239,7 +240,7 @@
             this.checkedListBox6.FormattingEnabled = true;
             this.checkedListBox6.Items.AddRange(new object[] {
             "..."});
-            this.checkedListBox6.Location = new System.Drawing.Point(399, 465);
+            this.checkedListBox6.Location = new System.Drawing.Point(1625, 418);
             this.checkedListBox6.Name = "checkedListBox6";
             this.checkedListBox6.Size = new System.Drawing.Size(120, 94);
             this.checkedListBox6.TabIndex = 30;
@@ -248,7 +249,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(416, 438);
+            this.label6.Location = new System.Drawing.Point(1642, 391);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 13);
             this.label6.TabIndex = 31;
@@ -259,7 +260,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1426, 839);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.checkedListBox6);
             this.Controls.Add(this.label5);
