@@ -71,5 +71,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
