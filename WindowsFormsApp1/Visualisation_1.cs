@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace WindowsFormsApp1
 {
     public partial class Visualisation_1 : Form
@@ -124,6 +126,11 @@ namespace WindowsFormsApp1
         }
 
         private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
