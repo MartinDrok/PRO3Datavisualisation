@@ -99,6 +99,19 @@ namespace WindowsFormsApp1
 
         private string filter_vestiging = "";
 
+        private string filter_zuid_holland2 = "";
+        private string filter_noord_holland2 = "";
+        private string filter_zeeland2 = "";
+        private string filter_noord_brabant2 = "";
+        private string filter_utrecht2 = "";
+        private string filter_flevoland2 = "";
+        private string filter_gelderland2 = "";
+        private string filter_limburg2 = "";
+        private string filter_overijssel2 = "";
+        private string filter_drenthe2 = "";
+        private string filter_friesland2 = "";
+        private string filter_groningen2 = "";
+
         private int button_zuid_holland = 0;    // button 4
         private int button_noord_holland = 0;   // button 5
         private int button_zeeland = 0;         // button 6
@@ -189,6 +202,8 @@ namespace WindowsFormsApp1
                     button_zuid_holland = 1;
                     this.button4.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_zuid_holland = " OR RegioVanVertrek LIKE 'Zuid-Holland'";
+                    filter_zuid_holland2 = " OR RegioS LIKE 'Zuid-Holland'";
+
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -205,6 +220,7 @@ namespace WindowsFormsApp1
                     button_zuid_holland = 0;
                     this.button4.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_zuid_holland = "";
+                    filter_zuid_holland2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -212,6 +228,7 @@ namespace WindowsFormsApp1
                     button_zuid_holland = 2;
                     this.button4.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_zuid_holland = "";
+                    filter_zuid_holland2 = "";
                     filter_vestiging = "'Zuid-Holland'";
                 }
             }
@@ -222,6 +239,7 @@ namespace WindowsFormsApp1
                     button_zuid_holland = 1;
                     this.button4.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_zuid_holland = " OR RegioVanVertrek LIKE 'Zuid-Holland'";
+                    filter_zuid_holland2 = " OR RegioS LIKE 'Zuid-Holland'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -242,6 +260,7 @@ namespace WindowsFormsApp1
                     button_noord_holland = 1;
                     this.button5.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_noord_holland = " OR RegioVanVertrek LIKE 'Noord-Holland'";
+                    filter_noord_holland2 = " OR RegioS LIKE 'Noord-Holland'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -258,6 +277,7 @@ namespace WindowsFormsApp1
                     button_noord_holland = 0;
                     this.button5.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_noord_holland = "";
+                    filter_noord_holland2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -265,6 +285,7 @@ namespace WindowsFormsApp1
                     button_noord_holland = 2;
                     this.button5.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_noord_holland = "";
+                    filter_noord_holland2 = "";
                     filter_vestiging = "'Noord-Holland'";
                 }
             }
@@ -275,6 +296,7 @@ namespace WindowsFormsApp1
                     button_noord_holland = 1;
                     this.button5.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_noord_holland = " OR RegioVanVertrek LIKE 'Noord-Holland'";
+                    filter_noord_holland2 = " OR RegioS LIKE 'Noord-Holland'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -296,6 +318,7 @@ namespace WindowsFormsApp1
                     button_zeeland = 1;
                     this.button6.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_zeeland = " OR RegioVanVertrek LIKE 'Zeeland'";
+                    filter_zeeland2 = " OR RegioS LIKE 'Zeeland'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -312,6 +335,7 @@ namespace WindowsFormsApp1
                     button_zeeland = 0;
                     this.button6.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_zeeland = "";
+                    filter_zeeland2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -319,6 +343,7 @@ namespace WindowsFormsApp1
                     button_zeeland = 2;
                     this.button6.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_zeeland = "";
+                    filter_zeeland2 = "";
                     filter_vestiging = "'Zeeland'";
                 }
             }
@@ -329,6 +354,7 @@ namespace WindowsFormsApp1
                     button_zeeland = 1;
                     this.button6.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_zeeland = " OR RegioVanVertrek LIKE 'Zeeland'";
+                    filter_zeeland2 = " OR RegioS LIKE 'Zeeland'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -349,6 +375,7 @@ namespace WindowsFormsApp1
                     button_noord_brabant = 1;
                     this.button7.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_noord_brabant = " OR RegioVanVertrek LIKE 'Noord-Brabant'";
+                    filter_noord_brabant2 = " OR RegioS LIKE 'Noord-Brabant'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -365,6 +392,7 @@ namespace WindowsFormsApp1
                     button_noord_brabant = 0;
                     this.button7.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_noord_brabant = "";
+                    filter_noord_brabant2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -372,6 +400,7 @@ namespace WindowsFormsApp1
                     button_noord_brabant = 2;
                     this.button7.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_noord_brabant = "";
+                    filter_noord_brabant2 = "";
                     filter_vestiging = "'Noord-Brabant'";
                 }
             }
@@ -382,6 +411,7 @@ namespace WindowsFormsApp1
                     button_noord_brabant = 1;
                     this.button7.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_noord_brabant = " OR RegioVanVertrek LIKE 'Noord-Brabant'";
+                    filter_noord_brabant2 = " OR RegioS LIKE 'Noord-Brabant'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -403,6 +433,7 @@ namespace WindowsFormsApp1
                     button_utrecht = 1;
                     this.button8.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_utrecht = " OR RegioVanVertrek LIKE 'Utrecht'";
+                    filter_utrecht2 = " OR RegioS LIKE 'Utrecht'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -419,6 +450,7 @@ namespace WindowsFormsApp1
                     button_utrecht = 0;
                     this.button8.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_utrecht = "";
+                    filter_utrecht2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -426,6 +458,7 @@ namespace WindowsFormsApp1
                     button_utrecht = 2;
                     this.button8.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_utrecht = "";
+                    filter_utrecht2 = "";
                     filter_vestiging = "'Utrecht'";
                 }
             }
@@ -436,6 +469,7 @@ namespace WindowsFormsApp1
                     button_utrecht = 1;
                     this.button8.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_utrecht = " OR RegioVanVertrek LIKE 'Utrecht'";
+                    filter_utrecht2 = " OR RegioS LIKE 'Utrecht'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -456,6 +490,7 @@ namespace WindowsFormsApp1
                     button_flevoland = 1;
                     this.button9.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_flevoland = " OR RegioVanVertrek LIKE 'Flevoland'";
+                    filter_flevoland2 = " OR RegioS LIKE 'Flevoland'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -472,6 +507,7 @@ namespace WindowsFormsApp1
                     button_flevoland = 0;
                     this.button9.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_flevoland = "";
+                    filter_flevoland2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -479,6 +515,7 @@ namespace WindowsFormsApp1
                     button_flevoland = 2;
                     this.button9.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_flevoland = "";
+                    filter_flevoland2 = "";
                     filter_vestiging = "'Flevoland'";
                 }
             }
@@ -489,6 +526,7 @@ namespace WindowsFormsApp1
                     button_flevoland = 1;
                     this.button9.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_flevoland = " OR RegioVanVertrek LIKE 'Flevoland'";
+                    filter_flevoland2 = " OR RegioS LIKE 'Flevoland'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -509,6 +547,7 @@ namespace WindowsFormsApp1
                     button_gelderland = 1;
                     this.button10.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_gelderland = " OR RegioVanVertrek LIKE 'Gelderland'";
+                    filter_gelderland2 = " OR RegioS LIKE 'Gelderland'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -525,6 +564,7 @@ namespace WindowsFormsApp1
                     button_gelderland = 0;
                     this.button10.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_gelderland = "";
+                    filter_gelderland2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -532,6 +572,7 @@ namespace WindowsFormsApp1
                     button_gelderland = 2;
                     this.button10.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_gelderland = "";
+                    filter_gelderland2 = "";
                     filter_vestiging = "'Gelderland'";
                 }
             }
@@ -542,6 +583,7 @@ namespace WindowsFormsApp1
                     button_gelderland = 1;
                     this.button10.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_gelderland = " OR RegioVanVertrek LIKE 'Gelderland'";
+                    filter_gelderland2 = " OR RegioS LIKE 'Gelderland'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -562,6 +604,7 @@ namespace WindowsFormsApp1
                     button_limburg = 1;
                     this.button11.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_limburg = " OR RegioVanVertrek LIKE 'Limburg'";
+                    filter_limburg2 = " OR RegioS LIKE 'Limburg'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -578,6 +621,7 @@ namespace WindowsFormsApp1
                     button_limburg = 0;
                     this.button11.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_limburg = "";
+                    filter_limburg2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -585,6 +629,7 @@ namespace WindowsFormsApp1
                     button_limburg = 2;
                     this.button11.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_limburg = "";
+                    filter_limburg2 = "";
                     filter_vestiging = "'Limburg'";
                 }
             }
@@ -595,6 +640,7 @@ namespace WindowsFormsApp1
                     button_limburg = 1;
                     this.button11.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_limburg = " OR RegioVanVertrek LIKE 'Limburg'";
+                    filter_limburg2 = " OR RegioS LIKE 'Limburg'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -615,6 +661,7 @@ namespace WindowsFormsApp1
                     button_overijssel = 1;
                     this.button12.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_overijssel = " OR RegioVanVertrek LIKE 'Overijssel'";
+                    filter_overijssel2 = " OR RegioS LIKE 'Overijssel'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -631,6 +678,7 @@ namespace WindowsFormsApp1
                     button_overijssel = 0;
                     this.button12.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_overijssel = "";
+                    filter_overijssel2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -638,6 +686,7 @@ namespace WindowsFormsApp1
                     button_overijssel = 2;
                     this.button12.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_overijssel = "";
+                    filter_overijssel2 = "";
                     filter_vestiging = "'Overijssel'";
                 }
             }
@@ -648,6 +697,7 @@ namespace WindowsFormsApp1
                     button_overijssel = 1;
                     this.button12.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_overijssel = " OR RegioVanVertrek LIKE 'Overijssel'";
+                    filter_overijssel2 = " OR RegioS LIKE 'Overijssel'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -668,6 +718,7 @@ namespace WindowsFormsApp1
                     button_drenthe = 1;
                     this.button13.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_drenthe = " OR RegioVanVertrek LIKE 'Drenthe'";
+                    filter_drenthe2 = " OR RegioS LIKE 'Drenthe'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -684,6 +735,7 @@ namespace WindowsFormsApp1
                     button_drenthe = 0;
                     this.button13.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_drenthe = "";
+                    filter_drenthe2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -691,6 +743,7 @@ namespace WindowsFormsApp1
                     button_drenthe = 2;
                     this.button13.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_drenthe = "";
+                    filter_drenthe2 = "";
                     filter_vestiging = "'Drenthe'";
                 }
             }
@@ -701,6 +754,7 @@ namespace WindowsFormsApp1
                     button_drenthe = 1;
                     this.button13.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_drenthe = " OR RegioVanVertrek LIKE 'Drenthe'";
+                    filter_drenthe2 = " OR RegioS LIKE 'Drenthe'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -721,6 +775,7 @@ namespace WindowsFormsApp1
                     button_friesland = 1;
                     this.button14.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_friesland = " OR RegioVanVertrek LIKE 'Friesland'";
+                    filter_friesland2 = " OR RegioS LIKE 'Friesland'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -737,6 +792,7 @@ namespace WindowsFormsApp1
                     button_friesland = 0;
                     this.button14.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_friesland = "";
+                    filter_friesland2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -744,6 +800,7 @@ namespace WindowsFormsApp1
                     button_friesland = 2;
                     this.button14.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_friesland = "";
+                    filter_friesland2 = "";
                     filter_vestiging = "'Friesland'";
                 }
             }
@@ -754,6 +811,7 @@ namespace WindowsFormsApp1
                     button_friesland = 1;
                     this.button14.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_friesland = " OR RegioVanVertrek LIKE 'Friesland'";
+                    filter_friesland = " OR RegioS LIKE 'Friesland'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -774,6 +832,7 @@ namespace WindowsFormsApp1
                     button_groningen = 1;
                     this.button15.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_groningen = " OR RegioVanVertrek LIKE 'Groningen'";
+                    filter_groningen2 = " OR RegioS LIKE 'Groningen'";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -790,6 +849,7 @@ namespace WindowsFormsApp1
                     button_groningen = 0;
                     this.button15.BackColor = Color.FromArgb(((int)(((byte)(rgb_emptyclick_array[0])))), ((int)(((byte)(rgb_emptyclick_array[1])))), ((int)(((byte)(rgb_emptyclick_array[2])))));
                     filter_groningen = "";
+                    filter_groningen2 = "";
                 }
                 else if (e.Button == MouseButtons.Right)
                 {
@@ -797,6 +857,7 @@ namespace WindowsFormsApp1
                     button_groningen = 2;
                     this.button15.BackColor = Color.FromArgb(((int)(((byte)(rgb_rightclick_array[0])))), ((int)(((byte)(rgb_rightclick_array[1])))), ((int)(((byte)(rgb_rightclick_array[2])))));
                     filter_groningen = "";
+                    filter_groningen2 = "";
                     filter_vestiging = "'Groningen'";
                 }
             }
@@ -807,6 +868,7 @@ namespace WindowsFormsApp1
                     button_groningen = 1;
                     this.button15.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
                     filter_groningen = " OR RegioVanVertrek LIKE 'Groningen'";
+                    filter_groningen2 = " OR RegioS LIKE 'Groningen'";
                     filter_vestiging = "";
                 }
                 else if (e.Button == MouseButtons.Right)
@@ -837,7 +899,7 @@ namespace WindowsFormsApp1
             if (button_jaar2011 == 0)
             {
                 button_jaar2011 = 1;
-                this.buttonjaar2011.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+                this.buttonjaar2011.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox35x22;
                 button_jaar2012 = 0;
                 button_jaar2013 = 0;
                 button_jaar2014 = 0;
@@ -863,7 +925,7 @@ namespace WindowsFormsApp1
             if (button_jaar2012 == 0)
             {
                 button_jaar2012 = 1;
-                this.buttonjaar2012.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+                this.buttonjaar2012.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox35x22;
                 button_jaar2011 = 0;
                 button_jaar2013 = 0;
                 button_jaar2014 = 0;
@@ -889,7 +951,7 @@ namespace WindowsFormsApp1
             if (button_jaar2013 == 0)
             {
                 button_jaar2013 = 1;
-                this.buttonjaar2013.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+                this.buttonjaar2013.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox35x22;
                 button_jaar2011 = 0;
                 button_jaar2012 = 0;
                 button_jaar2014 = 0;
@@ -915,7 +977,7 @@ namespace WindowsFormsApp1
             if (button_jaar2014 == 0)
             {
                 button_jaar2014 = 1;
-                this.buttonjaar2014.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+                this.buttonjaar2014.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox35x22;
                 button_jaar2011 = 0;
                 button_jaar2012 = 0;
                 button_jaar2013 = 0;
@@ -941,7 +1003,7 @@ namespace WindowsFormsApp1
             if (button_jaar2015 == 0)
             {
                 button_jaar2015 = 1;
-                this.buttonjaar2015.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+                this.buttonjaar2015.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox35x22;
                 button_jaar2011 = 0;
                 button_jaar2012 = 0;
                 button_jaar2013 = 0;
@@ -967,7 +1029,7 @@ namespace WindowsFormsApp1
             if (button_jaar2016 == 0)
             {
                 button_jaar2016 = 1;
-                this.buttonjaar2016.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox56x29;
+                this.buttonjaar2016.Image = global::WindowsFormsApp1.Properties.Resources.checkedbox35x22;
                 button_jaar2011 = 0;
                 button_jaar2012 = 0;
                 button_jaar2013 = 0;
@@ -1037,7 +1099,32 @@ namespace WindowsFormsApp1
                     DataTable tableVerhuizingen;                                                                                                // Maakt DataTables aan in DataSet
                     tableVerhuizingen = datasetMM1.Tables["MMVerhuizingen"];
 
-                    SqlDataAdapter adapterBedrijven = new SqlDataAdapter("SELECT * FROM MMVestigingen", con);                                  // Maakt DataAdapter en DataSet aan
+                    SqlDataAdapter adapterBedrijven = new SqlDataAdapter("SELECT SUM(Vestigingen_1) as Vestigingen_1, RegioS, Perioden FROM MMVestigingen" +
+                        " WHERE " +
+                        " Perioden LIKE " + filter_Perioden
+                        + " AND (RegioS LIKE 'Nederland'"
+                        + filter_zuid_holland2
+                        + filter_noord_holland2
+                        + filter_zeeland2
+                        + filter_noord_brabant2
+                        + filter_utrecht2
+                        + filter_flevoland2
+                        + filter_gelderland2
+                        + filter_limburg2
+                        + filter_overijssel2
+                        + filter_drenthe2
+                        + filter_friesland2
+                        + filter_groningen2
+                        + " OR RegioS LIKE " + filter_vestiging
+                        + ") AND RegioS NOT LIKE 'Nederland'"
+                        + " GROUP BY Perioden, RegioS", con);                                                            // Maakt DataAdapter en DataSet aan
+
+
+                   // SELECT SUM(Vestigingen_1), RegioS, Perioden FROM MMVestigingen
+                   //GROUP BY Perioden, RegioS
+                   //   ORDER BY RegioS
+
+
                     DataSet datasetMM2 = new DataSet("MMVestigingen");
                     adapterBedrijven.FillSchema(datasetMM2, SchemaType.Source, "MMVestigingen");                                         // Vult DataSet met data uit SQL database
                     adapterBedrijven.Fill(datasetMM2, "MMVestigingen");
@@ -1057,6 +1144,13 @@ namespace WindowsFormsApp1
                     chart3.Series["Aantal personen"].YValueMembers = "TussenGemeentenVerhuisdePersonen_1";                                               // geeft y-as aan
                     chart3.Titles["Title1"].Visible = true;
                     chart3.Titles["Title1"].Text = "Aantal verhuisde personen naar " + filter_vestiging + " in " + filter_Perioden;
+
+                    chart1.DataSource = datasetMM2;                                                                                                      
+                    chart1.Series["Aantal bedrijven"].XValueMember = "RegioS";                                                                 
+                    chart1.Series["Aantal bedrijven"].YValueMembers = "Vestigingen_1";                                              
+                    chart1.Titles["Title1"].Visible = true;
+                    chart1.Titles["Title1"].Text = "Aantal gevestigde bedrijven in " + filter_Perioden;
+
                 }
                 if (filter_Perioden == "")                                                                                                // als er geen periode is aangevinkt
                 {
@@ -1087,6 +1181,16 @@ namespace WindowsFormsApp1
         }
 
         private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonjaar2011_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void chart1_Click_1(object sender, EventArgs e)
         {
 
         }
