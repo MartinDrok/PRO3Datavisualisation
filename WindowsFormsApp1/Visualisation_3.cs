@@ -1131,25 +1131,32 @@ namespace WindowsFormsApp1
                     DataTable tableBedrijven;                                                                                                   // Maakt DataTables aan in DataSet
                     tableBedrijven = datasetMM2.Tables["MMVestigingen"];
 
-                    foreach (DataRow row in tableVerhuizingen.Rows)                      // Vult console met waarden uit DataTable, goede manier om werking van datatable te testen
-                    {
-                        foreach (DataColumn col in tableVerhuizingen.Columns)
-                            Console.Write(string.Format("{0, -10}", row[col].ToString()));
-                        //Console.WriteLine(col.ColumnName);
-                        Console.WriteLine();
-                    }
+                    //foreach (DataRow row in tableVerhuizingen.Rows)                      // Vult console met waarden uit DataTable, goede manier om werking van datatable te testen
+                    //{
+                    //    foreach (DataColumn col in tableVerhuizingen.Columns)
+                    //        Console.Write(string.Format("{0, -10}", row[col].ToString()));
+                    //    //Console.WriteLine(col.ColumnName);
+                    //    Console.WriteLine();
+                    //}
+
+                    string filter_vestiging_grafiekweergave1 = filter_vestiging.Replace("%","");
+                    string filter_vestiging_grafiekweergave2 = filter_vestiging_grafiekweergave1.Replace("'", "");
+                    string filter_periode_grafiekweergave1 = filter_Perioden.Replace("%","");
+                    string filter_periode_grafiekweergave2 = filter_periode_grafiekweergave1.Replace("'","");
+                    
+
 
                     chart3.DataSource = datasetMM1;                                                                                                      // vult de chart met data
                     chart3.Series["Aantal personen"].XValueMember = "RegioVanVertrek";                                                                   // geeft x-as aan
                     chart3.Series["Aantal personen"].YValueMembers = "TussenGemeentenVerhuisdePersonen_1";                                               // geeft y-as aan
                     chart3.Titles["Title1"].Visible = true;
-                    chart3.Titles["Title1"].Text = "Aantal verhuisde personen naar " + filter_vestiging + " in " + filter_Perioden;
+                    chart3.Titles["Title1"].Text = "Aantal verhuisde personen naar " + filter_vestiging_grafiekweergave2 + " in " + filter_periode_grafiekweergave2;
 
                     chart1.DataSource = datasetMM2;                                                                                                      
                     chart1.Series["Aantal bedrijven"].XValueMember = "RegioS";                                                                 
                     chart1.Series["Aantal bedrijven"].YValueMembers = "Vestigingen_1";                                              
                     chart1.Titles["Title1"].Visible = true;
-                    chart1.Titles["Title1"].Text = "Aantal gevestigde bedrijven in " + filter_Perioden;
+                    chart1.Titles["Title1"].Text = "Aantal gevestigde bedrijven in " + filter_periode_grafiekweergave2;
 
                 }
                 if (filter_Perioden == "")                                                                                                // als er geen periode is aangevinkt

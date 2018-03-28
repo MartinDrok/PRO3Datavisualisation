@@ -62,5 +62,26 @@ namespace WindowsFormsApp1
         }
 
         public PictureBox NetherlandsMap;
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Visualisation_2 vis_2 = new Visualisation_2();
+            vis_2.Show();
+            this.Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Visualisation_3 vis_3 = new Visualisation_3();
+            vis_3.Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Visualisation_1 vis_1 = new Visualisation_1();
+            vis_1.Show();
+            this.Hide();
+        }
     }
 }

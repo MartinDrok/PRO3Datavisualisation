@@ -93,9 +93,39 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap inkomen_icoon_145w {
+            get {
+                object obj = ResourceManager.GetObject("inkomen icoon 145w", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mens_icoon_145w {
+            get {
+                object obj = ResourceManager.GetObject("mens icoon 145w", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Nederland {
             get {
                 object obj = ResourceManager.GetObject("Nederland", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verhuisbus_icoon_145w {
+            get {
+                object obj = ResourceManager.GetObject("verhuisbus icoon 145w", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

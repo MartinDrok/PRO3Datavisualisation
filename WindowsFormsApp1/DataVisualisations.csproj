@@ -137,5 +137,41 @@
   <ItemGroup>
     <None Include="Resources\checkedbox35x22.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noord-Holland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zuid-Holland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flevoland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Utrecht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Overijssel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gelderland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Limburg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noord-Brabant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zeeland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mens icoon 145w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inkomen icoon 145w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verhuisbus icoon 145w.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

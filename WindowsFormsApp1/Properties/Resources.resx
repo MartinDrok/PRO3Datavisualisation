@@ -118,16 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkedbox100x50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\checkedbox100x50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Nederland" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nederland.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="checkedbox56x29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkedbox56x29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Nederland" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Nederland.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="checkedbox35x22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkedbox35x22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inkomen icoon 145w" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\inkomen icoon 145w.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkedbox100x50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checkedbox100x50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mens icoon 145w" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mens icoon 145w.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="verhuisbus icoon 145w" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\verhuisbus icoon 145w.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
