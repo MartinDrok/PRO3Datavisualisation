@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Windows.Forms.DataVisualization.Charting;
 
 
 
@@ -136,6 +138,16 @@ namespace WindowsFormsApp1
         }
 
         private void chart1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label28_Click(object sender, EventArgs e)
         {
 
         }
