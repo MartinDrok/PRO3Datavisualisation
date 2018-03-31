@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.Common;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -146,8 +147,8 @@ namespace WindowsFormsApp1
                 SqlDataAdapter adapterNaam = new SqlDataAdapter(query, con);
 
                 DataSet datasetNaam1 = new DataSet("Een_naam1");
-                datasetNaam1.FillSchema(datasetNaam1, SchemaType.Source, "Een_naam1");
-                datasetNaam1.Fill(datasetNaam1, " Een_naam1");
+                adapterNaam.FillSchema(datasetNaam1, SchemaType.Source, "Een_naam1");
+                adapterNaam.Fill(datasetNaam1, " Een_naam1");
                 DataTable datatable1;
                 datatable1 = datasetNaam1.Tables["Een_naam1"];
 
