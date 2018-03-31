@@ -159,6 +159,7 @@ namespace WindowsFormsApp1
                 string str = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=PRO3-Datavisualisatie;Integrated Security=True";              // Maakt verbinding met SQL server
                 SqlConnection con = new SqlConnection(str);
                 con.Open();
+                button33.Text = "Connected";
             }
             catch
             {
