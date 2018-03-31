@@ -29,30 +29,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.periodeGroupBox = new System.Windows.Forms.GroupBox();
+            this.eenKindRadioButton = new System.Windows.Forms.RadioButton();
+            this.autochtoonRadioButton = new System.Windows.Forms.RadioButton();
+            this.huurhuisRadioButton = new System.Windows.Forms.RadioButton();
+            this.koophuisRadioButton = new System.Windows.Forms.RadioButton();
+            this.nietZelfstandigRadioButton = new System.Windows.Forms.RadioButton();
+            this.welZelfstandigRadioButton = new System.Windows.Forms.RadioButton();
+            this.leeftijdGroupBox = new System.Windows.Forms.GroupBox();
+            this.drieKindRadioButton = new System.Windows.Forms.RadioButton();
+            this.tweeKindRadioButton = new System.Windows.Forms.RadioButton();
+            this.kinderenGroupBox = new System.Windows.Forms.GroupBox();
+            this.herkomstGroupBox = new System.Windows.Forms.GroupBox();
+            this.allochtoonRadioButton = new System.Windows.Forms.RadioButton();
+            this.woningGroupBox = new System.Windows.Forms.GroupBox();
+            this.zelfstandigGroupBox = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -60,24 +60,28 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.calculateButton = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.databaseStatusTextbox = new System.Windows.Forms.TextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton16 = new System.Windows.Forms.RadioButton();
-            this.radioButton17 = new System.Windows.Forms.RadioButton();
-            this.radioButton18 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
+            this.periodeGroupBox.SuspendLayout();
+            this.leeftijdGroupBox.SuspendLayout();
+            this.kinderenGroupBox.SuspendLayout();
+            this.herkomstGroupBox.SuspendLayout();
+            this.woningGroupBox.SuspendLayout();
+            this.zelfstandigGroupBox.SuspendLayout();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
@@ -139,7 +143,7 @@
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Nederland;
             this.pictureBox1.Location = new System.Drawing.Point(635, 46);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(768, 940);
             this.pictureBox1.TabIndex = 6;
@@ -158,178 +162,199 @@
             this.textBox14.TabIndex = 54;
             this.textBox14.Text = "Datavisualisatie - Het gemiddelde inkomen";
             // 
-            // groupBox2
+            // periodeGroupBox
             // 
-            this.groupBox2.Controls.Add(this.radioButton9);
-            this.groupBox2.Controls.Add(this.radioButton13);
-            this.groupBox2.Controls.Add(this.radioButton8);
-            this.groupBox2.Controls.Add(this.radioButton12);
-            this.groupBox2.Controls.Add(this.radioButton10);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.groupBox2.Location = new System.Drawing.Point(12, 259);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(196, 235);
-            this.groupBox2.TabIndex = 55;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Periode";
+            this.periodeGroupBox.Controls.Add(this.radioButton3);
+            this.periodeGroupBox.Controls.Add(this.radioButton5);
+            this.periodeGroupBox.Controls.Add(this.radioButton1);
+            this.periodeGroupBox.Controls.Add(this.radioButton4);
+            this.periodeGroupBox.Controls.Add(this.radioButton2);
+            this.periodeGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.periodeGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.periodeGroupBox.Location = new System.Drawing.Point(12, 259);
+            this.periodeGroupBox.Name = "periodeGroupBox";
+            this.periodeGroupBox.Size = new System.Drawing.Size(196, 235);
+            this.periodeGroupBox.TabIndex = 55;
+            this.periodeGroupBox.TabStop = false;
+            this.periodeGroupBox.Text = "Periode";
+            this.periodeGroupBox.Enter += new System.EventHandler(this.periodeGroupBox_Enter);
             // 
-            // radioButton6
+            // eenKindRadioButton
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(11, 30);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(64, 28);
-            this.radioButton6.TabIndex = 5;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Wel";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.eenKindRadioButton.AutoSize = true;
+            this.eenKindRadioButton.Location = new System.Drawing.Point(11, 30);
+            this.eenKindRadioButton.Name = "eenKindRadioButton";
+            this.eenKindRadioButton.Size = new System.Drawing.Size(79, 28);
+            this.eenKindRadioButton.TabIndex = 5;
+            this.eenKindRadioButton.TabStop = true;
+            this.eenKindRadioButton.Text = "Geen";
+            this.eenKindRadioButton.UseVisualStyleBackColor = true;
+            this.eenKindRadioButton.CheckedChanged += new System.EventHandler(this.eenKindRadioButton_CheckedChanged);
             // 
-            // radioButton5
+            // autochtoonRadioButton
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(15, 30);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(138, 29);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Nederland";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.autochtoonRadioButton.AutoSize = true;
+            this.autochtoonRadioButton.Location = new System.Drawing.Point(15, 30);
+            this.autochtoonRadioButton.Name = "autochtoonRadioButton";
+            this.autochtoonRadioButton.Size = new System.Drawing.Size(138, 29);
+            this.autochtoonRadioButton.TabIndex = 4;
+            this.autochtoonRadioButton.TabStop = true;
+            this.autochtoonRadioButton.Text = "Nederland";
+            this.autochtoonRadioButton.UseVisualStyleBackColor = true;
+            this.autochtoonRadioButton.CheckedChanged += new System.EventHandler(this.autochtoonRadioButton_CheckedChanged);
             // 
-            // radioButton4
+            // huurhuisRadioButton
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(15, 65);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(154, 29);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Huurwoning";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.huurhuisRadioButton.AutoSize = true;
+            this.huurhuisRadioButton.Location = new System.Drawing.Point(15, 65);
+            this.huurhuisRadioButton.Name = "huurhuisRadioButton";
+            this.huurhuisRadioButton.Size = new System.Drawing.Size(154, 29);
+            this.huurhuisRadioButton.TabIndex = 3;
+            this.huurhuisRadioButton.TabStop = true;
+            this.huurhuisRadioButton.Text = "Huurwoning";
+            this.huurhuisRadioButton.UseVisualStyleBackColor = true;
+            this.huurhuisRadioButton.CheckedChanged += new System.EventHandler(this.huurhuisRadioButton_CheckedChanged);
             // 
-            // radioButton3
+            // koophuisRadioButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(15, 30);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(158, 29);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Koopwoning";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.koophuisRadioButton.AutoSize = true;
+            this.koophuisRadioButton.Location = new System.Drawing.Point(15, 30);
+            this.koophuisRadioButton.Name = "koophuisRadioButton";
+            this.koophuisRadioButton.Size = new System.Drawing.Size(158, 29);
+            this.koophuisRadioButton.TabIndex = 2;
+            this.koophuisRadioButton.TabStop = true;
+            this.koophuisRadioButton.Text = "Koopwoning";
+            this.koophuisRadioButton.UseVisualStyleBackColor = true;
+            this.koophuisRadioButton.CheckedChanged += new System.EventHandler(this.koophuisRadioButton_CheckedChanged);
             // 
-            // radioButton2
+            // nietZelfstandigRadioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(15, 65);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 29);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Niet";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.nietZelfstandigRadioButton.AutoSize = true;
+            this.nietZelfstandigRadioButton.Location = new System.Drawing.Point(15, 65);
+            this.nietZelfstandigRadioButton.Name = "nietZelfstandigRadioButton";
+            this.nietZelfstandigRadioButton.Size = new System.Drawing.Size(72, 29);
+            this.nietZelfstandigRadioButton.TabIndex = 1;
+            this.nietZelfstandigRadioButton.TabStop = true;
+            this.nietZelfstandigRadioButton.Text = "Niet";
+            this.nietZelfstandigRadioButton.UseVisualStyleBackColor = true;
+            this.nietZelfstandigRadioButton.CheckedChanged += new System.EventHandler(this.nietZelfstandigRadioButton_CheckedChanged);
             // 
-            // radioButton1
+            // welZelfstandigRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(15, 30);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(70, 29);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Wel";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.welZelfstandigRadioButton.AutoSize = true;
+            this.welZelfstandigRadioButton.Location = new System.Drawing.Point(15, 30);
+            this.welZelfstandigRadioButton.Name = "welZelfstandigRadioButton";
+            this.welZelfstandigRadioButton.Size = new System.Drawing.Size(70, 29);
+            this.welZelfstandigRadioButton.TabIndex = 0;
+            this.welZelfstandigRadioButton.TabStop = true;
+            this.welZelfstandigRadioButton.Text = "Wel";
+            this.welZelfstandigRadioButton.UseVisualStyleBackColor = true;
+            this.welZelfstandigRadioButton.CheckedChanged += new System.EventHandler(this.welZelfstandigRadioButton_CheckedChanged);
             // 
-            // groupBox3
+            // leeftijdGroupBox
             // 
-            this.groupBox3.Controls.Add(this.radioButton14);
-            this.groupBox3.Controls.Add(this.radioButton18);
-            this.groupBox3.Controls.Add(this.radioButton15);
-            this.groupBox3.Controls.Add(this.radioButton17);
-            this.groupBox3.Controls.Add(this.radioButton16);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.groupBox3.Location = new System.Drawing.Point(12, 500);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(196, 235);
-            this.groupBox3.TabIndex = 56;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Leeftijd";
+            this.leeftijdGroupBox.Controls.Add(this.radioButton9);
+            this.leeftijdGroupBox.Controls.Add(this.radioButton6);
+            this.leeftijdGroupBox.Controls.Add(this.radioButton10);
+            this.leeftijdGroupBox.Controls.Add(this.radioButton7);
+            this.leeftijdGroupBox.Controls.Add(this.radioButton8);
+            this.leeftijdGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.leeftijdGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.leeftijdGroupBox.Location = new System.Drawing.Point(12, 500);
+            this.leeftijdGroupBox.Name = "leeftijdGroupBox";
+            this.leeftijdGroupBox.Size = new System.Drawing.Size(196, 235);
+            this.leeftijdGroupBox.TabIndex = 56;
+            this.leeftijdGroupBox.TabStop = false;
+            this.leeftijdGroupBox.Text = "Leeftijd";
             // 
-            // radioButton7
+            // drieKindRadioButton
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(11, 64);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(65, 28);
-            this.radioButton7.TabIndex = 0;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Niet";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.drieKindRadioButton.AutoSize = true;
+            this.drieKindRadioButton.Location = new System.Drawing.Point(11, 98);
+            this.drieKindRadioButton.Name = "drieKindRadioButton";
+            this.drieKindRadioButton.Size = new System.Drawing.Size(147, 28);
+            this.drieKindRadioButton.TabIndex = 1;
+            this.drieKindRadioButton.TabStop = true;
+            this.drieKindRadioButton.Text = "Meerderjarig";
+            this.drieKindRadioButton.UseVisualStyleBackColor = true;
+            this.drieKindRadioButton.CheckedChanged += new System.EventHandler(this.drieKindRadioButton_CheckedChanged);
             // 
-            // groupBox4
+            // tweeKindRadioButton
             // 
-            this.groupBox4.Controls.Add(this.radioButton6);
-            this.groupBox4.Controls.Add(this.radioButton7);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.groupBox4.Location = new System.Drawing.Point(12, 751);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(196, 235);
-            this.groupBox4.TabIndex = 57;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Aantal kinderen";
+            this.tweeKindRadioButton.AutoSize = true;
+            this.tweeKindRadioButton.Location = new System.Drawing.Point(11, 64);
+            this.tweeKindRadioButton.Name = "tweeKindRadioButton";
+            this.tweeKindRadioButton.Size = new System.Drawing.Size(133, 28);
+            this.tweeKindRadioButton.TabIndex = 0;
+            this.tweeKindRadioButton.TabStop = true;
+            this.tweeKindRadioButton.Text = "Minderjarig";
+            this.tweeKindRadioButton.UseVisualStyleBackColor = true;
+            this.tweeKindRadioButton.CheckedChanged += new System.EventHandler(this.tweeKindRadioButton_CheckedChanged);
             // 
-            // groupBox5
+            // kinderenGroupBox
             // 
-            this.groupBox5.Controls.Add(this.radioButton11);
-            this.groupBox5.Controls.Add(this.radioButton5);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.groupBox5.Location = new System.Drawing.Point(257, 751);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(196, 235);
-            this.groupBox5.TabIndex = 58;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Herkomstland";
+            this.kinderenGroupBox.Controls.Add(this.eenKindRadioButton);
+            this.kinderenGroupBox.Controls.Add(this.tweeKindRadioButton);
+            this.kinderenGroupBox.Controls.Add(this.drieKindRadioButton);
+            this.kinderenGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kinderenGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.kinderenGroupBox.Location = new System.Drawing.Point(12, 751);
+            this.kinderenGroupBox.Name = "kinderenGroupBox";
+            this.kinderenGroupBox.Size = new System.Drawing.Size(196, 235);
+            this.kinderenGroupBox.TabIndex = 57;
+            this.kinderenGroupBox.TabStop = false;
+            this.kinderenGroupBox.Text = "Kinderen";
             // 
-            // radioButton11
+            // herkomstGroupBox
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Location = new System.Drawing.Point(15, 63);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(141, 29);
-            this.radioButton11.TabIndex = 5;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Allochtoon";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.herkomstGroupBox.Controls.Add(this.allochtoonRadioButton);
+            this.herkomstGroupBox.Controls.Add(this.autochtoonRadioButton);
+            this.herkomstGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.herkomstGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.herkomstGroupBox.Location = new System.Drawing.Point(257, 751);
+            this.herkomstGroupBox.Name = "herkomstGroupBox";
+            this.herkomstGroupBox.Size = new System.Drawing.Size(196, 235);
+            this.herkomstGroupBox.TabIndex = 58;
+            this.herkomstGroupBox.TabStop = false;
+            this.herkomstGroupBox.Text = "Herkomstland";
             // 
-            // groupBox6
+            // allochtoonRadioButton
             // 
-            this.groupBox6.Controls.Add(this.radioButton3);
-            this.groupBox6.Controls.Add(this.radioButton4);
-            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.groupBox6.Location = new System.Drawing.Point(257, 500);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(196, 235);
-            this.groupBox6.TabIndex = 59;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Woning";
+            this.allochtoonRadioButton.AutoSize = true;
+            this.allochtoonRadioButton.Location = new System.Drawing.Point(15, 63);
+            this.allochtoonRadioButton.Name = "allochtoonRadioButton";
+            this.allochtoonRadioButton.Size = new System.Drawing.Size(141, 29);
+            this.allochtoonRadioButton.TabIndex = 5;
+            this.allochtoonRadioButton.TabStop = true;
+            this.allochtoonRadioButton.Text = "Allochtoon";
+            this.allochtoonRadioButton.UseVisualStyleBackColor = true;
+            this.allochtoonRadioButton.CheckedChanged += new System.EventHandler(this.allochtoonRadioButton_CheckedChanged);
             // 
-            // groupBox7
+            // woningGroupBox
             // 
-            this.groupBox7.Controls.Add(this.radioButton1);
-            this.groupBox7.Controls.Add(this.radioButton2);
-            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.groupBox7.Location = new System.Drawing.Point(257, 259);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(196, 235);
-            this.groupBox7.TabIndex = 60;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Zelfstandigheid";
+            this.woningGroupBox.Controls.Add(this.koophuisRadioButton);
+            this.woningGroupBox.Controls.Add(this.huurhuisRadioButton);
+            this.woningGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.woningGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.woningGroupBox.Location = new System.Drawing.Point(257, 500);
+            this.woningGroupBox.Name = "woningGroupBox";
+            this.woningGroupBox.Size = new System.Drawing.Size(196, 235);
+            this.woningGroupBox.TabIndex = 59;
+            this.woningGroupBox.TabStop = false;
+            this.woningGroupBox.Text = "Woning";
+            // 
+            // zelfstandigGroupBox
+            // 
+            this.zelfstandigGroupBox.Controls.Add(this.welZelfstandigRadioButton);
+            this.zelfstandigGroupBox.Controls.Add(this.nietZelfstandigRadioButton);
+            this.zelfstandigGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.zelfstandigGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.zelfstandigGroupBox.Location = new System.Drawing.Point(257, 259);
+            this.zelfstandigGroupBox.Name = "zelfstandigGroupBox";
+            this.zelfstandigGroupBox.Size = new System.Drawing.Size(196, 235);
+            this.zelfstandigGroupBox.TabIndex = 60;
+            this.zelfstandigGroupBox.TabStop = false;
+            this.zelfstandigGroupBox.Text = "Zelfstandigheid";
             // 
             // groupBox8
             // 
@@ -398,155 +423,208 @@
             this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.chart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.chart1.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            chartArea1.BorderColor = System.Drawing.Color.White;
-            chartArea1.Name = "ChartArea1";
-            chartArea1.ShadowColor = System.Drawing.Color.White;
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            legend1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            legend1.Name = "Inkomen";
-            this.chart1.Legends.Add(legend1);
+            chartArea3.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea3.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            chartArea3.BorderColor = System.Drawing.Color.White;
+            chartArea3.Name = "ChartArea1";
+            chartArea3.ShadowColor = System.Drawing.Color.White;
+            this.chart1.ChartAreas.Add(chartArea3);
+            legend3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            legend3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            legend3.Name = "Inkomen";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(1468, 530);
             this.chart1.Name = "chart1";
-            series1.BackSecondaryColor = System.Drawing.Color.White;
-            series1.BorderColor = System.Drawing.Color.Black;
-            series1.ChartArea = "ChartArea1";
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            series1.LabelBackColor = System.Drawing.Color.White;
-            series1.LabelBorderColor = System.Drawing.Color.White;
-            series1.Legend = "Inkomen";
-            series1.Name = "Inkomen";
-            series1.ShadowColor = System.Drawing.Color.White;
-            this.chart1.Series.Add(series1);
+            series3.BackSecondaryColor = System.Drawing.Color.White;
+            series3.BorderColor = System.Drawing.Color.Black;
+            series3.ChartArea = "ChartArea1";
+            series3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            series3.LabelBackColor = System.Drawing.Color.White;
+            series3.LabelBorderColor = System.Drawing.Color.White;
+            series3.Legend = "Inkomen";
+            series3.Name = "Inkomen";
+            series3.ShadowColor = System.Drawing.Color.White;
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(410, 456);
             this.chart1.TabIndex = 62;
             this.chart1.Text = "chart1";
-            title1.Name = "Title1";
-            this.chart1.Titles.Add(title1);
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
+            this.textBox1.Location = new System.Drawing.Point(466, 916);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(50, 68);
+            this.textBox1.TabIndex = 64;
+            this.textBox1.Text = "1";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // calculateButton
+            // 
+            this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.calculateButton.Location = new System.Drawing.Point(1079, 936);
+            this.calculateButton.Name = "calculateButton";
+            this.calculateButton.Size = new System.Drawing.Size(324, 49);
+            this.calculateButton.TabIndex = 71;
+            this.calculateButton.Text = "Laad diagram";
+            this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
+            this.calculateButton.MouseClick += new System.Windows.Forms.MouseEventHandler(this.calculateButton_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
+            this.textBox2.Location = new System.Drawing.Point(1346, 861);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(50, 68);
+            this.textBox2.TabIndex = 72;
+            this.textBox2.Text = "2";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox1_TextChanged_2);
+            // 
+            // databaseStatusTextbox
+            // 
+            this.databaseStatusTextbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.databaseStatusTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.databaseStatusTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.databaseStatusTextbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+            this.databaseStatusTextbox.Location = new System.Drawing.Point(10, 1008);
+            this.databaseStatusTextbox.Multiline = true;
+            this.databaseStatusTextbox.Name = "databaseStatusTextbox";
+            this.databaseStatusTextbox.Size = new System.Drawing.Size(260, 23);
+            this.databaseStatusTextbox.TabIndex = 73;
+            this.databaseStatusTextbox.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.radioButton1.Location = new System.Drawing.Point(11, 29);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(82, 29);
+            this.radioButton1.TabIndex = 74;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "2010";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.radioButton2.Location = new System.Drawing.Point(11, 64);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(82, 29);
+            this.radioButton2.TabIndex = 75;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "2011";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.radioButton3.Location = new System.Drawing.Point(11, 99);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(82, 29);
+            this.radioButton3.TabIndex = 76;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "2012";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.radioButton4.Location = new System.Drawing.Point(11, 134);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(82, 29);
+            this.radioButton4.TabIndex = 77;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "2013";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.radioButton5.Location = new System.Drawing.Point(11, 169);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(82, 29);
+            this.radioButton5.TabIndex = 78;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "2014";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.radioButton6.Location = new System.Drawing.Point(11, 101);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(104, 29);
+            this.radioButton6.TabIndex = 81;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "41 - 60";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.radioButton7.Location = new System.Drawing.Point(11, 171);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(69, 29);
+            this.radioButton7.TabIndex = 83;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "80+";
+            this.radioButton7.UseVisualStyleBackColor = true;
             // 
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
             this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton8.Location = new System.Drawing.Point(11, 30);
+            this.radioButton8.Location = new System.Drawing.Point(11, 31);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(82, 29);
-            this.radioButton8.TabIndex = 63;
+            this.radioButton8.Size = new System.Drawing.Size(104, 29);
+            this.radioButton8.TabIndex = 79;
             this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "2010";
+            this.radioButton8.Text = "15 - 20";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
             // radioButton9
             // 
             this.radioButton9.AutoSize = true;
             this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton9.Location = new System.Drawing.Point(11, 65);
+            this.radioButton9.Location = new System.Drawing.Point(11, 136);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(82, 29);
-            this.radioButton9.TabIndex = 64;
+            this.radioButton9.Size = new System.Drawing.Size(104, 29);
+            this.radioButton9.TabIndex = 82;
             this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "2011";
+            this.radioButton9.Text = "61 - 80";
             this.radioButton9.UseVisualStyleBackColor = true;
             // 
             // radioButton10
             // 
             this.radioButton10.AutoSize = true;
             this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton10.Location = new System.Drawing.Point(11, 100);
+            this.radioButton10.Location = new System.Drawing.Point(11, 66);
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(82, 29);
-            this.radioButton10.TabIndex = 65;
+            this.radioButton10.Size = new System.Drawing.Size(104, 29);
+            this.radioButton10.TabIndex = 80;
             this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "2012";
+            this.radioButton10.Text = "21 - 40";
             this.radioButton10.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton12.Location = new System.Drawing.Point(11, 135);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(82, 29);
-            this.radioButton12.TabIndex = 66;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "2013";
-            this.radioButton12.UseVisualStyleBackColor = true;
-            // 
-            // radioButton13
-            // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton13.Location = new System.Drawing.Point(11, 170);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(82, 29);
-            this.radioButton13.TabIndex = 67;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "2014";
-            this.radioButton13.UseVisualStyleBackColor = true;
-            // 
-            // radioButton14
-            // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton14.Location = new System.Drawing.Point(11, 65);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(104, 29);
-            this.radioButton14.TabIndex = 69;
-            this.radioButton14.TabStop = true;
-            this.radioButton14.Text = "21 - 40";
-            this.radioButton14.UseVisualStyleBackColor = true;
-            // 
-            // radioButton15
-            // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton15.Location = new System.Drawing.Point(11, 170);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(69, 29);
-            this.radioButton15.TabIndex = 72;
-            this.radioButton15.TabStop = true;
-            this.radioButton15.Text = "80+";
-            this.radioButton15.UseVisualStyleBackColor = true;
-            // 
-            // radioButton16
-            // 
-            this.radioButton16.AutoSize = true;
-            this.radioButton16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton16.Location = new System.Drawing.Point(11, 30);
-            this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(104, 29);
-            this.radioButton16.TabIndex = 68;
-            this.radioButton16.TabStop = true;
-            this.radioButton16.Text = "15 - 20";
-            this.radioButton16.UseVisualStyleBackColor = true;
-            // 
-            // radioButton17
-            // 
-            this.radioButton17.AutoSize = true;
-            this.radioButton17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton17.Location = new System.Drawing.Point(11, 135);
-            this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(104, 29);
-            this.radioButton17.TabIndex = 71;
-            this.radioButton17.TabStop = true;
-            this.radioButton17.Text = "61 - 80";
-            this.radioButton17.UseVisualStyleBackColor = true;
-            // 
-            // radioButton18
-            // 
-            this.radioButton18.AutoSize = true;
-            this.radioButton18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton18.Location = new System.Drawing.Point(11, 100);
-            this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(104, 29);
-            this.radioButton18.TabIndex = 70;
-            this.radioButton18.TabStop = true;
-            this.radioButton18.Text = "41 - 60";
-            this.radioButton18.UseVisualStyleBackColor = true;
             // 
             // Visualisation_2
             // 
@@ -554,14 +632,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.databaseStatusTextbox);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.calculateButton);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.zelfstandigGroupBox);
+            this.Controls.Add(this.woningGroupBox);
+            this.Controls.Add(this.herkomstGroupBox);
+            this.Controls.Add(this.kinderenGroupBox);
+            this.Controls.Add(this.leeftijdGroupBox);
+            this.Controls.Add(this.periodeGroupBox);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
@@ -572,18 +654,18 @@
             this.Load += new System.EventHandler(this.Visualisation_2_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
+            this.periodeGroupBox.ResumeLayout(false);
+            this.periodeGroupBox.PerformLayout();
+            this.leeftijdGroupBox.ResumeLayout(false);
+            this.leeftijdGroupBox.PerformLayout();
+            this.kinderenGroupBox.ResumeLayout(false);
+            this.kinderenGroupBox.PerformLayout();
+            this.herkomstGroupBox.ResumeLayout(false);
+            this.herkomstGroupBox.PerformLayout();
+            this.woningGroupBox.ResumeLayout(false);
+            this.woningGroupBox.PerformLayout();
+            this.zelfstandigGroupBox.ResumeLayout(false);
+            this.zelfstandigGroupBox.PerformLayout();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
@@ -600,36 +682,41 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox periodeGroupBox;
+        private System.Windows.Forms.RadioButton nietZelfstandigRadioButton;
+        private System.Windows.Forms.RadioButton welZelfstandigRadioButton;
+        private System.Windows.Forms.RadioButton autochtoonRadioButton;
+        private System.Windows.Forms.RadioButton huurhuisRadioButton;
+        private System.Windows.Forms.RadioButton koophuisRadioButton;
+        private System.Windows.Forms.RadioButton eenKindRadioButton;
+        private System.Windows.Forms.GroupBox leeftijdGroupBox;
+        private System.Windows.Forms.RadioButton drieKindRadioButton;
+        private System.Windows.Forms.RadioButton tweeKindRadioButton;
+        private System.Windows.Forms.GroupBox kinderenGroupBox;
+        private System.Windows.Forms.GroupBox herkomstGroupBox;
+        private System.Windows.Forms.GroupBox woningGroupBox;
+        private System.Windows.Forms.GroupBox zelfstandigGroupBox;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton allochtoonRadioButton;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button calculateButton;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox databaseStatusTextbox;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.RadioButton radioButton18;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton17;
-        private System.Windows.Forms.RadioButton radioButton16;
+        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
     }
 }
