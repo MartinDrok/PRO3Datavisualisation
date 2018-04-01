@@ -156,7 +156,7 @@ namespace WindowsFormsApp1
                 chart1.Series["Inkomen"].XValueMember = "OverigeKenmerken";
                 chart1.Series["Inkomen"].YValueMembers = "GemiddeldPersoonlijkInkomen_2";
                 chart1.Titles["Title1"].Visible = true;
-                chart1.Titles["Title1"].Text = "Aantal personen in " + filter_jaartal;
+                chart1.Titles["Title1"].Text = "Aantal personen in " + periode;
             }
             catch (Exception es)
             {
@@ -246,51 +246,53 @@ namespace WindowsFormsApp1
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-        periode = 2011;
+            periode = 2011;
         }
 
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        private void radioButton3_CheckedChanged_1(object sender, EventArgs e)
         {
             periode = 2012;
         }
 
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        private void radioButton4_CheckedChanged_1(object sender, EventArgs e)
         {
             periode = 2013;
         }
 
-        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        private void radioButton5_CheckedChanged_1(object sender, EventArgs e)
         {
             periode = 2014;
         }
 
         //Leeftijd
-        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        private void radioButton8_CheckedChanged_1(object sender, EventArgs e)
         {
             leeftijdCat = "404";
         }
 
-        private void radioButton10_CheckedChanged(object sender, EventArgs e)
+        private void radioButton10_CheckedChanged_1(object sender, EventArgs e)
         {
             leeftijdCat = " BETWEEN 405 AND 408";
         }
 
-        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        private void radioButton6_CheckedChanged_1(object sender, EventArgs e)
         {
             leeftijdCat = " BETWEEN 409 AND 412";
         }
 
-        private void radioButton9_CheckedChanged(object sender, EventArgs e)
+        private void radioButton9_CheckedChanged_1(object sender, EventArgs e)
         {
             leeftijdCat = " BETWEEN 413 AND 416";
         }
 
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        private void radioButton7_CheckedChanged_1(object sender, EventArgs e)
         {
             leeftijdCat = " BETWEEN 417 AND 418";
         }
 
-        
+        private void groupBox8_Enter(object sender, EventArgs e)
+        {
 
+        }
     }
 }
