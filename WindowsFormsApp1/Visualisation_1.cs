@@ -256,10 +256,10 @@ namespace WindowsFormsApp1
                 string str = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=PRO3-Datavisualisatie;Integrated Security=True";              // Maakt verbinding met SQL server
                 SqlConnection con = new SqlConnection(str);
                 con.Open();
-                MessageBox.Show("Connectie gelukt!");
+               // MessageBox.Show("Connectie gelukt!");
 
                 SqlDataAdapter adapterBevolking = new SqlDataAdapter(                                                                //  Maakt DataAdapter aan met SQL query
-                        "SELECT *, (num_Aantal_Geboren - num_Aantal_Overleden) as bevolking_verandering FROM DMBevolking " +
+                        "SELECT *, (num_Inwonerverschil - num_Aantal_Bevokkingstoename) as Aantal_Immigranten FROM DMBevolking " +
                         "WHERE Perioden LIKE " 
                         + filter_Perioden
                         + " AND (Regio LIKE "
@@ -283,6 +283,12 @@ namespace WindowsFormsApp1
                 adapterBevolking.Fill(datasetDM1, "DMBevolking");
                 DataTable tableBevolking;                                                                                                // Maakt DataTables aan in DataSet
                 tableBevolking = datasetDM1.Tables["DMBevolking"];
+
+                chart1.DataSource = datasetDM1;
+                chart1.Series["Aantel Immigranten"].XValueMember = "Aantal_Immigranten";
+                chart1.Series["Provincie"].YValueMembers = "Provincie";
+                chart1.Titles["Title1"].Visible = true;
+                chart1.Titles["Title1"].Text = "Aantal gevestigde bedrijven";
             }
             catch
             {
@@ -530,6 +536,11 @@ namespace WindowsFormsApp1
         private void yr_2015_CheckedChanged(object sender, EventArgs e)
         {
             filter_Perioden = "2015";
+        }
+
+        private void chart1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }
