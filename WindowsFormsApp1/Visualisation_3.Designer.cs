@@ -213,6 +213,7 @@
             this.button5.TabIndex = 21;
             this.button5.Text = "Noord- Holland";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             this.button5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button5_MouseDown);
             // 
             // button9
@@ -722,7 +723,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox13);

@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -143,6 +143,7 @@
             this.button21.TabIndex = 66;
             this.button21.Text = "Groningen";
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -159,6 +160,7 @@
             this.button22.TabIndex = 65;
             this.button22.Text = "Friesland";
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button23
             // 
@@ -175,6 +177,7 @@
             this.button23.TabIndex = 64;
             this.button23.Text = "Drenthe";
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button24
             // 
@@ -191,6 +194,7 @@
             this.button24.TabIndex = 63;
             this.button24.Text = "Overijssel";
             this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button25
             // 
@@ -207,6 +211,7 @@
             this.button25.TabIndex = 62;
             this.button25.Text = "Limburg";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -223,6 +228,7 @@
             this.button26.TabIndex = 61;
             this.button26.Text = "Gelderland";
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // button27
             // 
@@ -239,6 +245,7 @@
             this.button27.TabIndex = 60;
             this.button27.Text = "Flevoland";
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
@@ -255,6 +262,7 @@
             this.button28.TabIndex = 59;
             this.button28.Text = "Utrecht";
             this.button28.UseVisualStyleBackColor = false;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // button29
             // 
@@ -271,6 +279,7 @@
             this.button29.TabIndex = 58;
             this.button29.Text = "Noord- Brabant";
             this.button29.UseVisualStyleBackColor = false;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // button30
             // 
@@ -287,6 +296,7 @@
             this.button30.TabIndex = 57;
             this.button30.Text = "Zeeland";
             this.button30.UseVisualStyleBackColor = false;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button31
             // 
@@ -321,6 +331,7 @@
             this.button32.TabIndex = 55;
             this.button32.Text = "Zuid- Holland";
             this.button32.UseVisualStyleBackColor = false;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // pictureBox1
             // 
@@ -401,24 +412,24 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
-            chartArea4.Area3DStyle.Enable3D = true;
-            chartArea4.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea4.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea4.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea4.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea4);
-            legend4.BackColor = System.Drawing.Color.Transparent;
-            legend4.Enabled = false;
-            legend4.ForeColor = System.Drawing.Color.White;
-            legend4.Name = "Legend1";
-            this.chart1.Legends.Add(legend4);
+            chartArea6.Area3DStyle.Enable3D = true;
+            chartArea6.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea6.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea6.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea6.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea6);
+            legend6.BackColor = System.Drawing.Color.Transparent;
+            legend6.Enabled = false;
+            legend6.ForeColor = System.Drawing.Color.White;
+            legend6.Name = "Legend1";
+            this.chart1.Legends.Add(legend6);
             this.chart1.Location = new System.Drawing.Point(1022, 178);
             this.chart1.Name = "chart1";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart1.Series.Add(series4);
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chart1.Series.Add(series6);
             this.chart1.Size = new System.Drawing.Size(410, 352);
             this.chart1.TabIndex = 77;
             this.chart1.Text = "chart1";
@@ -451,7 +462,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1444, 881);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.chart1);
