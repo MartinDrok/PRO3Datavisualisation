@@ -128,6 +128,9 @@ namespace WindowsFormsApp1
                 {
                     // Periode erbij
                     query = query + " WHERE Perioden = " + periode;
+
+                    query = query + " AND SociaalEconomischeCategorie = 481";
+                    query = query + " AND Geslacht = 320";
                     // Zelfstandigheid
                     query = query + " AND OverigeKenmerken = " + zelfstandig;
                     // Koop of huur woning
@@ -138,6 +141,8 @@ namespace WindowsFormsApp1
                     query = query + " OR OverigeKenmerken = " + nederlander;
                     // Leeftijd
                     query = query + " OR OverigeKenmerken = " + leeftijdCat;
+
+
 
                     MessageBox.Show(query);
                 }
