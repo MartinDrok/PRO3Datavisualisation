@@ -52,15 +52,19 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.button33 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.yr_2015 = new System.Windows.Forms.RadioButton();
+            this.yr_2014 = new System.Windows.Forms.RadioButton();
+            this.yr_2013 = new System.Windows.Forms.RadioButton();
+            this.yr_2012 = new System.Windows.Forms.RadioButton();
+            this.yr_2011 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -143,6 +147,7 @@
             this.button21.TabIndex = 66;
             this.button21.Text = "Groningen";
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button22
             // 
@@ -159,6 +164,7 @@
             this.button22.TabIndex = 65;
             this.button22.Text = "Friesland";
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button23
             // 
@@ -175,6 +181,7 @@
             this.button23.TabIndex = 64;
             this.button23.Text = "Drenthe";
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button24
             // 
@@ -191,6 +198,7 @@
             this.button24.TabIndex = 63;
             this.button24.Text = "Overijssel";
             this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button25
             // 
@@ -207,6 +215,7 @@
             this.button25.TabIndex = 62;
             this.button25.Text = "Limburg";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -223,6 +232,7 @@
             this.button26.TabIndex = 61;
             this.button26.Text = "Gelderland";
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // button27
             // 
@@ -239,6 +249,7 @@
             this.button27.TabIndex = 60;
             this.button27.Text = "Flevoland";
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
@@ -255,6 +266,7 @@
             this.button28.TabIndex = 59;
             this.button28.Text = "Utrecht";
             this.button28.UseVisualStyleBackColor = false;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // button29
             // 
@@ -271,6 +283,7 @@
             this.button29.TabIndex = 58;
             this.button29.Text = "Noord- Brabant";
             this.button29.UseVisualStyleBackColor = false;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // button30
             // 
@@ -287,6 +300,7 @@
             this.button30.TabIndex = 57;
             this.button30.Text = "Zeeland";
             this.button30.UseVisualStyleBackColor = false;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button31
             // 
@@ -321,6 +335,7 @@
             this.button32.TabIndex = 55;
             this.button32.Text = "Zuid- Holland";
             this.button32.UseVisualStyleBackColor = false;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // pictureBox1
             // 
@@ -365,38 +380,6 @@
             this.button33.Text = "Bereken!";
             this.button33.UseVisualStyleBackColor = true;
             this.button33.Click += new System.EventHandler(this.button33_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkedListBox1);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.groupBox2.Location = new System.Drawing.Point(17, 313);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(243, 201);
-            this.groupBox2.TabIndex = 71;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Selecteer het jaartal";
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.CheckOnClick = true;
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.checkedListBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "2011",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016"});
-            this.checkedListBox1.Location = new System.Drawing.Point(19, 30);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(139, 156);
-            this.checkedListBox1.TabIndex = 62;
             // 
             // chart1
             // 
@@ -446,12 +429,88 @@
             this.label1.Text = "Datavisualisatie - Groei bevolking";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.yr_2015);
+            this.groupBox2.Controls.Add(this.yr_2014);
+            this.groupBox2.Controls.Add(this.yr_2013);
+            this.groupBox2.Controls.Add(this.yr_2012);
+            this.groupBox2.Controls.Add(this.yr_2011);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.groupBox2.Location = new System.Drawing.Point(17, 313);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(243, 201);
+            this.groupBox2.TabIndex = 71;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Selecteer het jaartal";
+            // 
+            // yr_2015
+            // 
+            this.yr_2015.AutoSize = true;
+            this.yr_2015.Location = new System.Drawing.Point(6, 170);
+            this.yr_2015.Name = "yr_2015";
+            this.yr_2015.Size = new System.Drawing.Size(82, 29);
+            this.yr_2015.TabIndex = 4;
+            this.yr_2015.TabStop = true;
+            this.yr_2015.Text = "2015";
+            this.yr_2015.UseVisualStyleBackColor = true;
+            this.yr_2015.CheckedChanged += new System.EventHandler(this.yr_2015_CheckedChanged);
+            // 
+            // yr_2014
+            // 
+            this.yr_2014.AutoSize = true;
+            this.yr_2014.Location = new System.Drawing.Point(6, 135);
+            this.yr_2014.Name = "yr_2014";
+            this.yr_2014.Size = new System.Drawing.Size(82, 29);
+            this.yr_2014.TabIndex = 3;
+            this.yr_2014.TabStop = true;
+            this.yr_2014.Text = "2014";
+            this.yr_2014.UseVisualStyleBackColor = true;
+            this.yr_2014.CheckedChanged += new System.EventHandler(this.yr_2014_CheckedChanged);
+            // 
+            // yr_2013
+            // 
+            this.yr_2013.AutoSize = true;
+            this.yr_2013.Location = new System.Drawing.Point(6, 100);
+            this.yr_2013.Name = "yr_2013";
+            this.yr_2013.Size = new System.Drawing.Size(82, 29);
+            this.yr_2013.TabIndex = 2;
+            this.yr_2013.TabStop = true;
+            this.yr_2013.Text = "2013";
+            this.yr_2013.UseVisualStyleBackColor = true;
+            this.yr_2013.CheckedChanged += new System.EventHandler(this.yr_2013_CheckedChanged);
+            // 
+            // yr_2012
+            // 
+            this.yr_2012.AutoSize = true;
+            this.yr_2012.Location = new System.Drawing.Point(6, 65);
+            this.yr_2012.Name = "yr_2012";
+            this.yr_2012.Size = new System.Drawing.Size(82, 29);
+            this.yr_2012.TabIndex = 1;
+            this.yr_2012.TabStop = true;
+            this.yr_2012.Text = "2012";
+            this.yr_2012.UseVisualStyleBackColor = true;
+            this.yr_2012.CheckedChanged += new System.EventHandler(this.yr_2012_CheckedChanged);
+            // 
+            // yr_2011
+            // 
+            this.yr_2011.AutoSize = true;
+            this.yr_2011.Location = new System.Drawing.Point(6, 30);
+            this.yr_2011.Name = "yr_2011";
+            this.yr_2011.Size = new System.Drawing.Size(82, 29);
+            this.yr_2011.TabIndex = 0;
+            this.yr_2011.TabStop = true;
+            this.yr_2011.Text = "2011";
+            this.yr_2011.UseVisualStyleBackColor = true;
+            this.yr_2011.CheckedChanged += new System.EventHandler(this.yr_2011_CheckedChanged);
+            // 
             // Visualisation_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1444, 881);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.chart1);
@@ -480,8 +539,9 @@
             this.Load += new System.EventHandler(this.Visualisation_1_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,10 +570,14 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton yr_2015;
+        private System.Windows.Forms.RadioButton yr_2014;
+        private System.Windows.Forms.RadioButton yr_2013;
+        private System.Windows.Forms.RadioButton yr_2012;
+        private System.Windows.Forms.RadioButton yr_2011;
     }
 }
