@@ -17,12 +17,10 @@ namespace WindowsFormsApp1
     {
         // Declare variables
         // Filters
-        private int periode = 2009; // Nummer is jaartal 
-        private int kinderen = 0; //365 of 366 voor wel kinderen //
-        private int zelfstandig = 466; //466 is zelfstandig 476 is zonder inkomen //
-        private int koopwoning = 202; // 202 voor Koop, 203 voor huur
-        private int nederlander = 422; // 422 voor autochtoon, > 422 voor allochtoon //
-        private String leeftijdCat = "";
+        private int periode = 0; // Nummer is jaartal 
+        private int geslacht = 320; // 321 is Mannen en 322 is vrouwen
+
+
 
         // Misc
         private String query;
@@ -124,44 +122,51 @@ namespace WindowsFormsApp1
                 query = ("SELECT * FROM dbo.PMInkomen");
 
                 // If a filter has been set add "WHERE..."
-                if (kinderen >= 0 || periode > 2009 || leeftijdCat != "" || zelfstandig > 0 || koopwoning > 0 || nederlander > 0)
+                if (geslacht > 319 || periode > 2009)
                 {
                     // Periode erbij
                     query = query + " WHERE Perioden = " + periode;
+                    query = query + " AND OverigeKenmerken >= 231 AND OverigeKenmerken <= 242";
+                    query = query + " AND SociaalEconomischeCategorie = 481";
+                    query = query + " AND Geslacht = " + geslacht;
+                    query = query + " AND Populatie = 491";
+                    query = query + ";";
                     // Zelfstandigheid
-                    query = query + " AND OverigeKenmerken = " + zelfstandig;
+                    //query = query + " AND OverigeKenmerken = " + zelfstandig;
                     // Koop of huur woning
-                    query = query + " OR OverigeKenmerken = " + koopwoning;
+                    //query = query + " OR OverigeKenmerken = " + koopwoning;
                     // Kinderen
-                    query = query + " OR OverigeKenmerken = " + kinderen;
+                    //query = query + " OR OverigeKenmerken = " + kinderen;
                     // Afkomst
-                    query = query + " OR OverigeKenmerken = " + nederlander;
+                    //query = query + " OR OverigeKenmerken = " + nederlander;
                     // Leeftijd
-                    query = query + " OR OverigeKenmerken = " + leeftijdCat;
+                    //query = query + " OR OverigeKenmerken = " + leeftijdCat;
 
-                    MessageBox.Show(query);
+
+
+                    //MessageBox.Show(query);
                 }
 
 
                 // Send query
-                SqlDataAdapter adapterNaam = new SqlDataAdapter(query, con);
+                SqlDataAdapter adapterInkomen = new SqlDataAdapter(query, con);
 
-                DataSet datasetNaam1 = new DataSet("Een_naam1");
-                adapterNaam.FillSchema(datasetNaam1, SchemaType.Source, "Een_naam1");
-                adapterNaam.Fill(datasetNaam1, " Een_naam1");
-                DataTable datatable1;
-                datatable1 = datasetNaam1.Tables["Een_naam1"];
+                DataSet datasetMP = new DataSet("MP-Inkomen");
+                adapterInkomen.FillSchema(datasetMP, SchemaType.Source, "MP-Inkomen");
+                adapterInkomen.Fill(datasetMP, "MP-Inkomen");
+                DataTable tableInkomen;
+                tableInkomen = datasetMP.Tables["MP-Inkomen"];
 
-                chart1.DataSource = datasetNaam1;
+                chart1.DataSource = datasetMP;
                 chart1.Series["Inkomen"].XValueMember = "OverigeKenmerken";
                 chart1.Series["Inkomen"].YValueMembers = "GemiddeldPersoonlijkInkomen_2";
-                chart1.Titles["Title1"].Visible = false;
-                chart1.Titles["Title1"].Text = "Aantal personen in " + periode;
+                chart1.Titles["Title1"].Visible = true;
+                chart1.Titles["Title1"].Text = "Gemiddeld inkomen in " + periode;
             }
             catch (Exception es)
             {
                 
-                MessageBox.Show(es.Message);
+                //MessageBox.Show(es.Message);
             }
         }
 
@@ -172,7 +177,53 @@ namespace WindowsFormsApp1
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
+            int provincie1 = 231;
+            string verandering1 = provincie1.ToString();
+            string nieuw1 = verandering1.Replace("231", "Groningen");
 
+            int provincie2 = 232;
+            string verandering2 = provincie2.ToString();
+            string nieuw2 = verandering2.Replace("232", "Friesland");
+
+            int provincie3 = 233;
+            string verandering3 = provincie3.ToString();
+            string nieuw3 = verandering3.Replace("233", "Drenthe");
+
+            int provincie4 = 234;
+            string verandering4 = provincie4.ToString();
+            string nieuw4 = verandering4.Replace("234", "Overijsel");
+
+            int provincie5 = 235;
+            string verandering5 = provincie5.ToString();
+            string nieuw5 = verandering5.Replace("235", "Flevoland");
+
+            int provincie6 = 236;
+            string verandering6 = provincie6.ToString();
+            string nieuw6 = verandering6.Replace("236", "Gelderland");
+
+            int provincie7 = 237;
+            string verandering7 = provincie7.ToString();
+            string nieuw7 = verandering7.Replace("237", "Utrecht");
+
+            int provincie8 = 238;
+            string verandering8 = provincie8.ToString();
+            string nieuw8 = verandering8.Replace("238", "Noor-Holland");
+
+            int provincie9 = 239;
+            string verandering9 = provincie9.ToString();
+            string nieuw9 = verandering9.Replace("239", "Zuid-Holland");
+
+            int provincie10 = 240;
+            string verandering10 = provincie10.ToString();
+            string nieuw10 = verandering10.Replace("240", "Zeeland");
+
+            int provincie11 = 241;
+            string verandering11 = provincie11.ToString();
+            string nieuw11 = verandering11.Replace("241", "Noord-Brabant");
+
+            int provincie12 = 242;
+            string verandering12 = provincie12.ToString();
+            string nieuw12 = verandering12.Replace("242", "Limburg");
         }
 
         private void kinderenGroupBox_Enter(object sender, EventArgs e)
@@ -180,62 +231,10 @@ namespace WindowsFormsApp1
 
         }
 
-        // Kinderen
-        private void eenKindRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            // geen kind
-            kinderen = 0;
-        }
-
-        private void tweeKindRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            // Minderjarig kind
-            kinderen = 365;
-        }
-
-        private void drieKindRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            // Meerderjarig kind
-            kinderen = 366;
-        }
 
         private void periodeGroupBox_Enter(object sender, EventArgs e)
         {
 
-        }
-
-        // Land van herkomst
-        private void autochtoonRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            nederlander = 422;
-        }
-
-        private void allochtoonRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            nederlander = 423;
-        }
-
-
-        // Woning
-        private void koophuisRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            koopwoning = 202;
-        }
-
-        private void huurhuisRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            koopwoning = 203;
-        }
-
-        // Zelfstandigheid 
-        private void welZelfstandigRadioButton_CheckedChanged(object sender, EventArgs e)
-        {
-            zelfstandig = 466;
-        }
-
-        private void nietZelfstandigRadioButton_CheckedChanged(Object sender, EventArgs e)
-        {
-            zelfstandig = 476;
         }
 
         // Periode
@@ -264,33 +263,24 @@ namespace WindowsFormsApp1
             periode = 2014;
         }
 
-        //Leeftijd
+        //Geslacht
         private void radioButton8_CheckedChanged_1(object sender, EventArgs e)
         {
-            leeftijdCat = "404";
+            geslacht = 321;
         }
 
         private void radioButton10_CheckedChanged_1(object sender, EventArgs e)
         {
-            leeftijdCat = " BETWEEN 405 AND 408";
+            geslacht = 322;
         }
 
-        private void radioButton6_CheckedChanged_1(object sender, EventArgs e)
-        {
-            leeftijdCat = " BETWEEN 409 AND 412";
-        }
-
-        private void radioButton9_CheckedChanged_1(object sender, EventArgs e)
-        {
-            leeftijdCat = " BETWEEN 413 AND 416";
-        }
-
-        private void radioButton7_CheckedChanged_1(object sender, EventArgs e)
-        {
-            leeftijdCat = " BETWEEN 417 AND 418";
-        }
 
         private void groupBox8_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
         {
 
         }
