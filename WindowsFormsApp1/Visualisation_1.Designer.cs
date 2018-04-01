@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -52,15 +52,19 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.button33 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.yr_2015 = new System.Windows.Forms.RadioButton();
+            this.yr_2014 = new System.Windows.Forms.RadioButton();
+            this.yr_2013 = new System.Windows.Forms.RadioButton();
+            this.yr_2012 = new System.Windows.Forms.RadioButton();
+            this.yr_2011 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -377,59 +381,27 @@
             this.button33.UseVisualStyleBackColor = true;
             this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkedListBox1);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.groupBox2.Location = new System.Drawing.Point(17, 313);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(243, 201);
-            this.groupBox2.TabIndex = 71;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Selecteer het jaartal";
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.checkedListBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.checkedListBox1.CheckOnClick = true;
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
-            this.checkedListBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "2011",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016"});
-            this.checkedListBox1.Location = new System.Drawing.Point(19, 30);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(139, 156);
-            this.checkedListBox1.TabIndex = 62;
-            // 
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
-            chartArea6.Area3DStyle.Enable3D = true;
-            chartArea6.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea6.AxisX.TitleForeColor = System.Drawing.Color.White;
-            chartArea6.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
-            legend6.BackColor = System.Drawing.Color.Transparent;
-            legend6.Enabled = false;
-            legend6.ForeColor = System.Drawing.Color.White;
-            legend6.Name = "Legend1";
-            this.chart1.Legends.Add(legend6);
+            chartArea4.Area3DStyle.Enable3D = true;
+            chartArea4.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea4.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea4.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.BackColor = System.Drawing.Color.Transparent;
+            legend4.Enabled = false;
+            legend4.ForeColor = System.Drawing.Color.White;
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
             this.chart1.Location = new System.Drawing.Point(1022, 178);
             this.chart1.Name = "chart1";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart1.Series.Add(series6);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(410, 352);
             this.chart1.TabIndex = 77;
             this.chart1.Text = "chart1";
@@ -456,6 +428,82 @@
             this.label1.TabIndex = 82;
             this.label1.Text = "Datavisualisatie - Groei bevolking";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.yr_2015);
+            this.groupBox2.Controls.Add(this.yr_2014);
+            this.groupBox2.Controls.Add(this.yr_2013);
+            this.groupBox2.Controls.Add(this.yr_2012);
+            this.groupBox2.Controls.Add(this.yr_2011);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold);
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
+            this.groupBox2.Location = new System.Drawing.Point(17, 313);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(243, 201);
+            this.groupBox2.TabIndex = 71;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Selecteer het jaartal";
+            // 
+            // yr_2015
+            // 
+            this.yr_2015.AutoSize = true;
+            this.yr_2015.Location = new System.Drawing.Point(6, 170);
+            this.yr_2015.Name = "yr_2015";
+            this.yr_2015.Size = new System.Drawing.Size(82, 29);
+            this.yr_2015.TabIndex = 4;
+            this.yr_2015.TabStop = true;
+            this.yr_2015.Text = "2015";
+            this.yr_2015.UseVisualStyleBackColor = true;
+            this.yr_2015.CheckedChanged += new System.EventHandler(this.yr_2015_CheckedChanged);
+            // 
+            // yr_2014
+            // 
+            this.yr_2014.AutoSize = true;
+            this.yr_2014.Location = new System.Drawing.Point(6, 135);
+            this.yr_2014.Name = "yr_2014";
+            this.yr_2014.Size = new System.Drawing.Size(82, 29);
+            this.yr_2014.TabIndex = 3;
+            this.yr_2014.TabStop = true;
+            this.yr_2014.Text = "2014";
+            this.yr_2014.UseVisualStyleBackColor = true;
+            this.yr_2014.CheckedChanged += new System.EventHandler(this.yr_2014_CheckedChanged);
+            // 
+            // yr_2013
+            // 
+            this.yr_2013.AutoSize = true;
+            this.yr_2013.Location = new System.Drawing.Point(6, 100);
+            this.yr_2013.Name = "yr_2013";
+            this.yr_2013.Size = new System.Drawing.Size(82, 29);
+            this.yr_2013.TabIndex = 2;
+            this.yr_2013.TabStop = true;
+            this.yr_2013.Text = "2013";
+            this.yr_2013.UseVisualStyleBackColor = true;
+            this.yr_2013.CheckedChanged += new System.EventHandler(this.yr_2013_CheckedChanged);
+            // 
+            // yr_2012
+            // 
+            this.yr_2012.AutoSize = true;
+            this.yr_2012.Location = new System.Drawing.Point(6, 65);
+            this.yr_2012.Name = "yr_2012";
+            this.yr_2012.Size = new System.Drawing.Size(82, 29);
+            this.yr_2012.TabIndex = 1;
+            this.yr_2012.TabStop = true;
+            this.yr_2012.Text = "2012";
+            this.yr_2012.UseVisualStyleBackColor = true;
+            this.yr_2012.CheckedChanged += new System.EventHandler(this.yr_2012_CheckedChanged);
+            // 
+            // yr_2011
+            // 
+            this.yr_2011.AutoSize = true;
+            this.yr_2011.Location = new System.Drawing.Point(6, 30);
+            this.yr_2011.Name = "yr_2011";
+            this.yr_2011.Size = new System.Drawing.Size(82, 29);
+            this.yr_2011.TabIndex = 0;
+            this.yr_2011.TabStop = true;
+            this.yr_2011.Text = "2011";
+            this.yr_2011.UseVisualStyleBackColor = true;
+            this.yr_2011.CheckedChanged += new System.EventHandler(this.yr_2011_CheckedChanged);
             // 
             // Visualisation_1
             // 
@@ -491,8 +539,9 @@
             this.Load += new System.EventHandler(this.Visualisation_1_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -521,10 +570,14 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton yr_2015;
+        private System.Windows.Forms.RadioButton yr_2014;
+        private System.Windows.Forms.RadioButton yr_2013;
+        private System.Windows.Forms.RadioButton yr_2012;
+        private System.Windows.Forms.RadioButton yr_2011;
     }
 }
