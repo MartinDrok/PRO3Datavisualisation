@@ -121,7 +121,7 @@ namespace WindowsFormsApp1
                 
 
                 // Calculate query and send it
-                query = "SELECT * FROM dbo.PMInkomen";
+                query = ("SELECT * FROM dbo.PMInkomen");
 
                 // If a filter has been set add "WHERE..."
                 if (kinderen >= 0 || periode > 2009 || leeftijdCat != "" || zelfstandig > 0 || koopwoning > 0 || nederlander > 0)
@@ -155,7 +155,7 @@ namespace WindowsFormsApp1
                 chart1.DataSource = datasetNaam1;
                 chart1.Series["Inkomen"].XValueMember = "OverigeKenmerken";
                 chart1.Series["Inkomen"].YValueMembers = "GemiddeldPersoonlijkInkomen_2";
-                chart1.Titles["Title1"].Visible = true;
+                chart1.Titles["Title1"].Visible = false;
                 chart1.Titles["Title1"].Text = "Aantal personen in " + periode;
             }
             catch (Exception es)
