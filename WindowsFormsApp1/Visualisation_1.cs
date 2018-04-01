@@ -259,8 +259,8 @@ namespace WindowsFormsApp1
                // MessageBox.Show("Connectie gelukt!");
 
                 SqlDataAdapter adapterBevolking = new SqlDataAdapter(                                                                //  Maakt DataAdapter aan met SQL query
-                        "SELECT *, (num_Inwonerverschil - num_Aantal_Bevokkingstoename) as Aantal_Immigranten FROM DMBevolking " +
-                        "WHERE Perioden LIKE " 
+                        "SELECT *, (Inwonerverschil - Aantal_Bevolkingstoename) as Aantal_Immigranten FROM DMBevolking " +
+                        "WHERE Periode LIKE " 
                         + filter_Perioden
                         + " AND (Regio LIKE "
                         + filter_zuid_holland
@@ -290,9 +290,9 @@ namespace WindowsFormsApp1
                 chart1.Titles["Title1"].Visible = true;
                 chart1.Titles["Title1"].Text = "Aantal gevestigde bedrijven";
             }
-            catch
+            catch (Exception es)                                                                                                               // Als de verbinding is mislukt
             {
-
+                MessageBox.Show(es.Message);
             }
         }
 
@@ -429,7 +429,7 @@ namespace WindowsFormsApp1
             {
                 button_utrecht = 1;
                 this.button28.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_utrecht = " OR Regio LIKE PV26";
+                filter_utrecht = " PV26";
             }
             else if (button_utrecht == 1)
             {
