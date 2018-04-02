@@ -696,7 +696,6 @@
             title2.Visible = false;
             this.chart1.Titles.Add(title2);
             this.chart1.Click += new System.EventHandler(this.chart1_Click_1);
-            this.chart1.ChartAreas["ChartArea1"].AxisY.Interval = 1;
             // 
             // buttonjaar2012
             // 
@@ -718,13 +717,14 @@
             this.pictureBox1.Size = new System.Drawing.Size(716, 858);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Visualisation_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1444, 881);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox13);
