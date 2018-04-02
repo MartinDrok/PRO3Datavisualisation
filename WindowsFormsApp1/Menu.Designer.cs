@@ -54,7 +54,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(687, 661);
+            this.button1.Location = new System.Drawing.Point(580, 627);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 70);
             this.button1.TabIndex = 0;
@@ -67,7 +67,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(161)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(864, 661);
+            this.button2.Location = new System.Drawing.Point(757, 627);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(145, 70);
             this.button2.TabIndex = 1;
@@ -80,7 +80,7 @@
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(151)))), ((int)(((byte)(161)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(1039, 661);
+            this.button3.Location = new System.Drawing.Point(932, 627);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(145, 70);
             this.button3.TabIndex = 2;
@@ -107,7 +107,7 @@
             this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(231)))), ((int)(((byte)(241)))));
-            this.textBox14.Location = new System.Drawing.Point(698, 261);
+            this.textBox14.Location = new System.Drawing.Point(591, 227);
             this.textBox14.Multiline = true;
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(483, 76);
@@ -121,7 +121,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.textBox1.Location = new System.Drawing.Point(753, 334);
+            this.textBox1.Location = new System.Drawing.Point(646, 300);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(391, 53);
@@ -135,7 +135,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox2.Location = new System.Drawing.Point(753, 433);
+            this.textBox2.Location = new System.Drawing.Point(646, 399);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(391, 29);
@@ -149,7 +149,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox3.Location = new System.Drawing.Point(687, 492);
+            this.textBox3.Location = new System.Drawing.Point(580, 458);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(145, 29);
@@ -163,7 +163,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox4.Location = new System.Drawing.Point(864, 492);
+            this.textBox4.Location = new System.Drawing.Point(757, 458);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(145, 29);
@@ -177,7 +177,7 @@
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox5.Location = new System.Drawing.Point(1038, 492);
+            this.textBox5.Location = new System.Drawing.Point(931, 458);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(145, 29);
@@ -188,7 +188,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::WindowsFormsApp1.Properties.Resources.verhuisbus_icoon_145w;
-            this.pictureBox3.Location = new System.Drawing.Point(1038, 558);
+            this.pictureBox3.Location = new System.Drawing.Point(931, 524);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(146, 73);
             this.pictureBox3.TabIndex = 68;
@@ -198,7 +198,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.inkomen_icoon_145w;
-            this.pictureBox2.Location = new System.Drawing.Point(899, 543);
+            this.pictureBox2.Location = new System.Drawing.Point(792, 509);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(71, 92);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -209,7 +209,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.mens_icoon_145w;
-            this.pictureBox1.Location = new System.Drawing.Point(713, 548);
+            this.pictureBox1.Location = new System.Drawing.Point(606, 514);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 87);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -230,7 +230,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1664, 1011);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

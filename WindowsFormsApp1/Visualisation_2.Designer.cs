@@ -131,7 +131,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Nederland;
-            this.pictureBox1.Location = new System.Drawing.Point(382, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(269, 10);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(768, 940);
@@ -318,7 +318,7 @@
             this.groupBox8.Controls.Add(this.label1);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.groupBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.groupBox8.Location = new System.Drawing.Point(1346, 21);
+            this.groupBox8.Location = new System.Drawing.Point(1042, 12);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(410, 425);
             this.groupBox8.TabIndex = 61;
@@ -479,7 +479,7 @@
             legend1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
             legend1.Name = "Inkomen";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(1188, 478);
+            this.chart1.Location = new System.Drawing.Point(962, 477);
             this.chart1.Name = "chart1";
             series1.BackSecondaryColor = System.Drawing.Color.White;
             series1.BorderColor = System.Drawing.Color.Black;
@@ -502,7 +502,7 @@
             // calculateButton
             // 
             this.calculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.calculateButton.Location = new System.Drawing.Point(826, 901);
+            this.calculateButton.Location = new System.Drawing.Point(611, 898);
             this.calculateButton.Name = "calculateButton";
             this.calculateButton.Size = new System.Drawing.Size(324, 49);
             this.calculateButton.TabIndex = 71;
@@ -530,7 +530,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
-            this.textBox3.Location = new System.Drawing.Point(1089, 827);
+            this.textBox3.Location = new System.Drawing.Point(885, 824);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(50, 68);
@@ -542,7 +542,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1664, 1011);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.databaseStatusTextbox);
             this.Controls.Add(this.calculateButton);

@@ -136,7 +136,7 @@
             // 
             this.buttonLaden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.buttonLaden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLaden.Location = new System.Drawing.Point(1313, 109);
+            this.buttonLaden.Location = new System.Drawing.Point(1246, 14);
             this.buttonLaden.Margin = new System.Windows.Forms.Padding(2);
             this.buttonLaden.Name = "buttonLaden";
             this.buttonLaden.Size = new System.Drawing.Size(123, 34);
@@ -259,7 +259,7 @@
             this.button10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button10.Location = new System.Drawing.Point(761, 572);
+            this.button10.Location = new System.Drawing.Point(720, 578);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(100, 50);
             this.button10.TabIndex = 26;
@@ -276,7 +276,7 @@
             this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button8.Location = new System.Drawing.Point(608, 572);
+            this.button8.Location = new System.Drawing.Point(567, 578);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(100, 50);
             this.button8.TabIndex = 24;
@@ -293,7 +293,7 @@
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(458, 598);
+            this.button4.Location = new System.Drawing.Point(417, 604);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 50);
             this.button4.TabIndex = 20;
@@ -310,7 +310,7 @@
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(362, 744);
+            this.button6.Location = new System.Drawing.Point(321, 750);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(100, 50);
             this.button6.TabIndex = 22;
@@ -327,7 +327,7 @@
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Location = new System.Drawing.Point(648, 744);
+            this.button7.Location = new System.Drawing.Point(607, 750);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(100, 50);
             this.button7.TabIndex = 23;
@@ -344,7 +344,7 @@
             this.button11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button11.Location = new System.Drawing.Point(813, 794);
+            this.button11.Location = new System.Drawing.Point(772, 800);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(100, 50);
             this.button11.TabIndex = 27;
@@ -525,7 +525,7 @@
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(211)))), ((int)(((byte)(221)))));
-            this.textBox9.Location = new System.Drawing.Point(1139, 114);
+            this.textBox9.Location = new System.Drawing.Point(1072, 19);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(160, 23);
@@ -538,7 +538,7 @@
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-            this.textBox10.Location = new System.Drawing.Point(12, 1006);
+            this.textBox10.Location = new System.Drawing.Point(-29, 1012);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(260, 23);
@@ -571,7 +571,7 @@
             legend1.Name = "Legend1";
             legend1.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chart3.Legends.Add(legend1);
-            this.chart3.Location = new System.Drawing.Point(1124, 155);
+            this.chart3.Location = new System.Drawing.Point(1033, 79);
             this.chart3.Name = "chart3";
             series1.BackSecondaryColor = System.Drawing.Color.DarkTurquoise;
             series1.ChartArea = "ChartArea1";
@@ -627,7 +627,7 @@
             this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
-            this.textBox13.Location = new System.Drawing.Point(1083, 100);
+            this.textBox13.Location = new System.Drawing.Point(1016, 5);
             this.textBox13.Multiline = true;
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(50, 68);
@@ -673,7 +673,7 @@
             legend2.Name = "Legend1";
             legend2.TitleFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(1031, 646);
+            this.chart1.Location = new System.Drawing.Point(968, 578);
             this.chart1.Name = "chart1";
             series2.BackSecondaryColor = System.Drawing.Color.DarkTurquoise;
             series2.ChartArea = "ChartArea1";
@@ -712,7 +712,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Nederland;
-            this.pictureBox1.Location = new System.Drawing.Point(312, 156);
+            this.pictureBox1.Location = new System.Drawing.Point(271, 162);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(716, 858);
             this.pictureBox1.TabIndex = 19;
@@ -724,7 +724,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1444, 881);
+            this.ClientSize = new System.Drawing.Size(1664, 1011);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.textBox14);
             this.Controls.Add(this.textBox13);
