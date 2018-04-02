@@ -262,7 +262,7 @@ namespace WindowsFormsApp1
                         "SELECT *, (Inwonerverschil - Aantal_Bevolkingstoename) as Aantal_Immigranten FROM DMBevolking " +
                         "WHERE Periode LIKE " 
                         + filter_Perioden
-                        + " AND (Regio LIKE "
+                        + " AND Regio LIKE "
                         + filter_zuid_holland
                         + filter_noord_holland
                         + filter_zeeland
@@ -274,7 +274,7 @@ namespace WindowsFormsApp1
                         + filter_overijssel
                         + filter_drenthe
                         + filter_friesland
-                        + filter_groningen + ")"
+                        + filter_groningen
                         ,con);
 
 
@@ -285,10 +285,10 @@ namespace WindowsFormsApp1
                 tableBevolking = datasetDM1.Tables["DMBevolking"];
 
                 chart1.DataSource = datasetDM1;
-                chart1.Series["Aantel Immigranten"].XValueMember = "Aantal_Immigranten";
-                chart1.Series["Provincie"].YValueMembers = "Provincie";
+                chart1.Series["Aantal_Immigranten"].XValueMember = "Aantal_Immigranten";
+                chart1.Series["Aantal_Immigranten"].YValueMembers = "Provincie";
                 chart1.Titles["Title1"].Visible = true;
-                chart1.Titles["Title1"].Text = "Aantal gevestigde bedrijven";
+                chart1.Titles["Title1"].Text = "Aantal Immigranten Per Provincie";
             }
             catch (Exception es)                                                                                                               // Als de verbinding is mislukt
             {
@@ -429,7 +429,7 @@ namespace WindowsFormsApp1
             {
                 button_utrecht = 1;
                 this.button28.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_utrecht = " PV26";
+                filter_utrecht = " 'PV26'";
             }
             else if (button_utrecht == 1)
             {
@@ -539,6 +539,11 @@ namespace WindowsFormsApp1
         }
 
         private void chart1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
 
         }
