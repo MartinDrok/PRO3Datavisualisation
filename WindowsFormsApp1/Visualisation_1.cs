@@ -317,7 +317,7 @@ namespace WindowsFormsApp1
             {
                 button_noord_holland = 1;
                 this.button31.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_noord_holland = " OR Regio LIKE PV27";
+                filter_noord_holland = "'PV27'";
             }
             else if (button_noord_holland == 1)
             {
