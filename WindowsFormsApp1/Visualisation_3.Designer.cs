@@ -696,6 +696,7 @@
             title2.Visible = false;
             this.chart1.Titles.Add(title2);
             this.chart1.Click += new System.EventHandler(this.chart1_Click_1);
+            this.chart1.ChartAreas["ChartArea1"].AxisY.Interval = 1;
             // 
             // buttonjaar2012
             // 
