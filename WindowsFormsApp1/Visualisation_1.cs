@@ -118,7 +118,7 @@ namespace WindowsFormsApp1
             }
         }
 
- 
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -263,7 +263,7 @@ namespace WindowsFormsApp1
                 var query = ("SELECT *, (Inwonerverschil - Aantal_Bevolkingstoename) as Aantal_Immigranten FROM DMBevolking ");
 
                 SqlDataAdapter adapterBevolking = new SqlDataAdapter(                                                                //  Maakt DataAdapter aan met SQL query
-                        query = query + "WHERE Periode LIKE " 
+                        query = query + "WHERE Periode LIKE "
                         + filter_Perioden
                         + " AND (Regio LIKE 'NL01'"
                         + filter_zuid_holland
@@ -279,7 +279,7 @@ namespace WindowsFormsApp1
                         + filter_friesland
                         + filter_groningen
                         + ") AND Regio NOT LIKE 'NL01'"
-                        ,con);
+                        , con);
 
                 DataSet datasetDM1 = new DataSet("DMBevolking");                                                                                      // Maakt DataSet aan
                 adapterBevolking.FillSchema(datasetDM1, SchemaType.Source, "DMBevolking");                                      // Vult DataSet met data uit SQL database
