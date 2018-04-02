@@ -333,7 +333,7 @@ namespace WindowsFormsApp1
             {
                 button_groningen = 1;
                 this.button21.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_groningen = " OR Regio LIKE 'PV20'";
+                filter_groningen = "'PV20'";
             }
             else if (button_groningen == 1)
             {
@@ -349,7 +349,7 @@ namespace WindowsFormsApp1
             {
                 button_friesland = 1;
                 this.button22.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_friesland = " OR Regio LIKE PV21";
+                filter_friesland = "'PV21'";
             }
             else if (button_friesland == 1)
             {
@@ -365,7 +365,7 @@ namespace WindowsFormsApp1
             {
                 button_drenthe = 1;
                 this.button23.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_drenthe = " OR Regio LIKE PV22";
+                filter_drenthe = "'PV22'";
             }
             else if (button_drenthe == 1)
             {
@@ -381,7 +381,7 @@ namespace WindowsFormsApp1
             {
                 button_flevoland = 1;
                 this.button27.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_flevoland = " OR Regio LIKE PV24";
+                filter_flevoland = "'PV24'";
             }
             else if (button_flevoland == 1)
             {
@@ -397,7 +397,7 @@ namespace WindowsFormsApp1
             {
                 button_overijssel = 1;
                 this.button24.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_overijssel = " OR Regio LIKE PV23";
+                filter_overijssel = "'PV23'";
             }
             else if (button_overijssel == 1)
             {
@@ -413,7 +413,7 @@ namespace WindowsFormsApp1
             {
                 button_zuid_holland = 1;
                 this.button32.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_zuid_holland = " OR Regio LIKE PV28";
+                filter_zuid_holland = "'PV28'";
             }
             else if (button_zuid_holland == 1)
             {
@@ -429,7 +429,7 @@ namespace WindowsFormsApp1
             {
                 button_utrecht = 1;
                 this.button28.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_utrecht = " 'PV26'";
+                filter_utrecht = "'PV26'";
             }
             else if (button_utrecht == 1)
             {
@@ -445,7 +445,7 @@ namespace WindowsFormsApp1
             {
                 button_gelderland = 1;
                 this.button26.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_gelderland = " OR Regio LIKE PV25";
+                filter_gelderland = "'PV25'";
             }
             else if (button_gelderland == 1)
             {
@@ -461,7 +461,7 @@ namespace WindowsFormsApp1
             {
                 button_noord_brabant = 1;
                 this.button29.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_noord_brabant = " OR Regio LIKE PV30";
+                filter_noord_brabant = "'PV30'";
             }
             else if (button_noord_brabant == 1)
             {
@@ -477,7 +477,7 @@ namespace WindowsFormsApp1
             {
                 button_zeeland = 1;
                 this.button30.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_zeeland = " OR Regio LIKE PV29";
+                filter_zeeland = "'PV29'";
             }
             else if (button_zeeland == 1)
             {
@@ -493,7 +493,7 @@ namespace WindowsFormsApp1
             {
                 button_limburg = 1;
                 this.button25.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_limburg = " OR Regio LIKE PV31";
+                filter_limburg = "'PV31'";
             }
             else if (button_limburg == 1)
             {
