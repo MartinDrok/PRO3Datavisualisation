@@ -256,13 +256,14 @@ namespace WindowsFormsApp1
                 string str = "Data Source=(local)\\SQLEXPRESS;Initial Catalog=PRO3-Datavisualisatie;Integrated Security=True";              // Maakt verbinding met SQL server
                 SqlConnection con = new SqlConnection(str);
                 con.Open();
-               // MessageBox.Show("Connectie gelukt!");
+                // MessageBox.Show("Connectie gelukt!");
+
+                var query = ("SELECT *, (Inwonerverschil - Aantal_Bevolkingstoename) as Aantal_Immigranten FROM DMBevolking ");
 
                 SqlDataAdapter adapterBevolking = new SqlDataAdapter(                                                                //  Maakt DataAdapter aan met SQL query
-                        "SELECT *, (Inwonerverschil - Aantal_Bevolkingstoename) as Aantal_Immigranten FROM DMBevolking " +
-                        "WHERE Periode LIKE " 
+                        query = query + "WHERE Periode LIKE " 
                         + filter_Perioden
-                        + " AND Regio LIKE "
+                        + " AND (Regio LIKE 'NL01'"
                         + filter_zuid_holland
                         + filter_noord_holland
                         + filter_zeeland
@@ -275,8 +276,8 @@ namespace WindowsFormsApp1
                         + filter_drenthe
                         + filter_friesland
                         + filter_groningen
+                        + ") AND Regio NOT LIKE 'NL01'"
                         ,con);
-
 
                 DataSet datasetDM1 = new DataSet("DMBevolking");                                                                                      // Maakt DataSet aan
                 adapterBevolking.FillSchema(datasetDM1, SchemaType.Source, "DMBevolking");                                      // Vult DataSet met data uit SQL database
@@ -285,8 +286,8 @@ namespace WindowsFormsApp1
                 tableBevolking = datasetDM1.Tables["DMBevolking"];
 
                 chart1.DataSource = datasetDM1;
-                chart1.Series["Aantal_Immigranten"].XValueMember = "Aantal_Immigranten";
-                chart1.Series["Aantal_Immigranten"].YValueMembers = "Provincie";
+                chart1.Series["Aantal_Immigranten"].XValueMember = "Regio";
+                chart1.Series["Aantal_Immigranten"].YValueMembers = "Aantal_Immigranten";
                 chart1.Titles["Title1"].Visible = true;
                 chart1.Titles["Title1"].Text = "Aantal Immigranten Per Provincie";
             }
@@ -317,7 +318,7 @@ namespace WindowsFormsApp1
             {
                 button_noord_holland = 1;
                 this.button31.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_noord_holland = "'PV27'";
+                filter_noord_holland = " OR Regio LIKE 'PV27'";
             }
             else if (button_noord_holland == 1)
             {
@@ -333,7 +334,7 @@ namespace WindowsFormsApp1
             {
                 button_groningen = 1;
                 this.button21.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_groningen = "'PV20'";
+                filter_groningen = " OR Regio LIKE 'PV20'";
             }
             else if (button_groningen == 1)
             {
@@ -349,7 +350,7 @@ namespace WindowsFormsApp1
             {
                 button_friesland = 1;
                 this.button22.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_friesland = "'PV21'";
+                filter_friesland = " OR Regio LIKE 'PV21'";
             }
             else if (button_friesland == 1)
             {
@@ -365,7 +366,7 @@ namespace WindowsFormsApp1
             {
                 button_drenthe = 1;
                 this.button23.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_drenthe = "'PV22'";
+                filter_drenthe = " OR Regio LIKE 'PV22'";
             }
             else if (button_drenthe == 1)
             {
@@ -381,7 +382,7 @@ namespace WindowsFormsApp1
             {
                 button_flevoland = 1;
                 this.button27.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_flevoland = "'PV24'";
+                filter_flevoland = " OR Regio LIKE 'PV24'";
             }
             else if (button_flevoland == 1)
             {
@@ -397,7 +398,7 @@ namespace WindowsFormsApp1
             {
                 button_overijssel = 1;
                 this.button24.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_overijssel = "'PV23'";
+                filter_overijssel = " OR Regio LIKE 'PV23'";
             }
             else if (button_overijssel == 1)
             {
@@ -413,7 +414,7 @@ namespace WindowsFormsApp1
             {
                 button_zuid_holland = 1;
                 this.button32.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_zuid_holland = "'PV28'";
+                filter_zuid_holland = " OR Regio LIKE 'PV28'";
             }
             else if (button_zuid_holland == 1)
             {
@@ -429,7 +430,7 @@ namespace WindowsFormsApp1
             {
                 button_utrecht = 1;
                 this.button28.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_utrecht = "'PV26'";
+                filter_utrecht = " OR Regio LIKE 'PV26'";
             }
             else if (button_utrecht == 1)
             {
@@ -445,7 +446,7 @@ namespace WindowsFormsApp1
             {
                 button_gelderland = 1;
                 this.button26.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_gelderland = "'PV25'";
+                filter_gelderland = " OR Regio LIKE 'PV25'";
             }
             else if (button_gelderland == 1)
             {
@@ -461,7 +462,7 @@ namespace WindowsFormsApp1
             {
                 button_noord_brabant = 1;
                 this.button29.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_noord_brabant = "'PV30'";
+                filter_noord_brabant = " OR Regio LIKE 'PV30'";
             }
             else if (button_noord_brabant == 1)
             {
@@ -477,7 +478,7 @@ namespace WindowsFormsApp1
             {
                 button_zeeland = 1;
                 this.button30.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_zeeland = "'PV29'";
+                filter_zeeland = " OR Regio LIKE 'PV29'";
             }
             else if (button_zeeland == 1)
             {
@@ -493,7 +494,7 @@ namespace WindowsFormsApp1
             {
                 button_limburg = 1;
                 this.button25.BackColor = Color.FromArgb(((int)(((byte)(rgb_leftclick_array[0])))), ((int)(((byte)(rgb_leftclick_array[1])))), ((int)(((byte)(rgb_leftclick_array[2])))));
-                filter_limburg = "'PV31'";
+                filter_limburg = " OR Regio LIKE 'PV31'";
             }
             else if (button_limburg == 1)
             {
@@ -515,27 +516,27 @@ namespace WindowsFormsApp1
 
         private void yr_2011_CheckedChanged(object sender, EventArgs e)
         {
-            filter_Perioden = "2011";
+            filter_Perioden = "'2011%'";
         }
 
         private void yr_2012_CheckedChanged(object sender, EventArgs e)
         {
-            filter_Perioden = "2012";
+            filter_Perioden = "'2012%'";
         }
 
         private void yr_2013_CheckedChanged(object sender, EventArgs e)
         {
-            filter_Perioden = "2013";
+            filter_Perioden = "'2013%'";
         }
 
         private void yr_2014_CheckedChanged(object sender, EventArgs e)
         {
-            filter_Perioden = "2014";
+            filter_Perioden = "'2014%'";
         }
 
         private void yr_2015_CheckedChanged(object sender, EventArgs e)
         {
-            filter_Perioden = "2015";
+            filter_Perioden = "'2015%'";
         }
 
         private void chart1_Click_2(object sender, EventArgs e)
